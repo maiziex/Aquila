@@ -83,7 +83,7 @@ XinMagic/XinMagic_step2.py --out_dir Results --num_threads 30 --reference XinMag
 
 ### Step 1: 
 ```
-XinMagic/XinMagic_step1_hybrid.py --bam_file ./S24385_Lysis_2/Longranger_align_bam/S24385_lysis_2/outs/possorted_bam.bam,./S24385_Lysis_2H/Longranger_align_bam/S24385_lysis_2H/outs/possorted_bam.bam --vcf_file ./S24385_lysis_2/Freebayes_results/S24385_lysis_2_grch38_ref_freebayes.vcf,./S24385_lysis_2H/Freebayes_results/S24385_lysis_2H_grch38_ref_freebayes.vcf --sample_name S24385_lysis_2,S24385_lysis_2H --out_dir Merge_L5L6 --uniq_map_dir XinMagic_v2.0/Uniqness_map
+XinMagic/XinMagic_step1_hybrid.py --bam_file ./S24385_Lysis_2/Longranger_align_bam/S24385_lysis_2/outs/possorted_bam.bam,./S24385_Lysis_2H/Longranger_align_bam/S24385_lysis_2H/outs/possorted_bam.bam --vcf_file ./S24385_lysis_2/Freebayes_results/S24385_lysis_2_grch38_ref_freebayes.vcf,./S24385_lysis_2H/Freebayes_results/S24385_lysis_2H_grch38_ref_freebayes.vcf --sample_name S24385_lysis_2,S24385_lysis_2H --out_dir Results --uniq_map_dir XinMagic/Uniqness_map
 ```
 #### *Required parameters
 ##### --bam_file: "possorted_bam.bam" is bam file generated from barcode-awere aligner like "Lonranger align". Each bam file is seperately by comma (",").
@@ -100,6 +100,22 @@ XinMagic/XinMagic_step1_hybrid.py --bam_file ./S24385_Lysis_2/Longranger_align_b
 
 ##### --block_threshold, default = 200000 (200kb)
  
+##### --block_len_use, default = 100000 (100kb)
+
+##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 2" 
+
+### Step 2: (The same as assembly single library)
+```
+XinMagic/XinMagic_step2.py --out_dir Results --num_threads 30 --reference XinMagic/source/ref.fa
+```
+#### *Required parameters
+#####  --reference: "XinMagic/source/ref.fa" is the reference fasta file you can download by "./install".
+
+#### *Optional parameters
+#####  --out_dir, default = ./Asssembly_results, make sure it's the same as "--out_dir" from step1 if you want to define your own output directory name.
+
+#####  --num_threads, default = 20 
+
 ##### --block_len_use, default = 100000 (100kb)
 
 ##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 2" 
