@@ -104,7 +104,7 @@ XinMagic/XinMagic_step1_hybrid.py --bam_file ./S24385_Lysis_2/Longranger_align_b
 
 ##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 2" 
 
-### Step 2: (The same as assembly single library)
+### Step 2: (The same as single library assembly)
 ```
 XinMagic/XinMagic_step2.py --out_dir Results --num_threads 30 --reference XinMagic/source/ref.fa
 ```
