@@ -77,3 +77,30 @@ XinMagic/XinMagic_step2.py --out_dir Results --num_threads 30 --reference XinMag
 ## Assembly Based Variants Calling:
 ##### You can use "Results/Assembly_Contigs_files" as input directory to generate a VCF file which includes SNPs and SVs. 
 ##### Please check check <a href="https://github.com/maiziex/XinMagic/blob/master/Assembly_based_variants_call/README.md/">Assembly_based_variants_call</a> for detail. 
+
+
+## Assembly for multiple libraries
+
+### Step 1: 
+```
+XinMagic/XinMagic_step1_hybrid.py --bam_file ./S24385_Lysis_2/Longranger_align_bam/S24385_lysis_2/outs/possorted_bam.bam,./S24385_Lysis_2H/Longranger_align_bam/S24385_lysis_2H/outs/possorted_bam.bam --vcf_file ./S24385_lysis_2/Freebayes_results/S24385_lysis_2_grch38_ref_freebayes.vcf,./S24385_lysis_2H/Freebayes_results/S24385_lysis_2H_grch38_ref_freebayes.vcf --sample_name S24385_lysis_2,S24385_lysis_2H --out_dir Merge_L5L6 --uniq_map_dir XinMagic_v2.0/Uniqness_map
+```
+#### *Required parameters
+##### --bam_file: "possorted_bam.bam" is bam file generated from barcode-awere aligner like "Lonranger align". Each bam file is seperately by comma (",").
+
+##### --vcf_file: "S12878_freebayes.vcf" is VCF file generated from variant caller like "FreeBayes". Each VCF file is seperately by comma (",").
+
+
+#####  --sample_name: S24385_lysis_2,S24385_lysis_2H are the sample names you can define. Each sample name is seperately by comma (",").
+
+#####  --uniq_map_dir: "XinMagic/Uniqness_map" is the uniqness file you can download by "./install.sh".
+
+#### *Optional parameters
+#####  --out_dir, default = ./Asssembly_results 
+
+##### --block_threshold, default = 200000 (200kb)
+ 
+##### --block_len_use, default = 100000 (100kb)
+
+##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 2" 
+
