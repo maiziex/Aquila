@@ -79,7 +79,7 @@ XinMagic/XinMagic_step2.py --out_dir Results --num_threads 30 --reference XinMag
 ##### Please check check <a href="https://github.com/maiziex/XinMagic/blob/master/Assembly_based_variants_call/README.md/">Assembly_based_variants_call</a> for detail. 
 
 
-## Assembly for multiple libraries
+# Assembly for multiple libraries:
 
 ### Step 1: 
 ```
