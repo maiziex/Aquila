@@ -46,10 +46,11 @@ XinMagic/XinMagic_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freeba
 ##### --block_len_use, default = 100000 (100kb)
 
 ##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will assemble chromsomes 1 - 5. Use "--chr_start 2 --chr_end 2" will only assemlby chromosome 2. 
-To use this option, it is recommended to run the below command first to save more time. 
-'''
+
+To use this option "--chr_start, --chr_end", it is recommended to run the below command first to save more time. 
+```
 python XinMagic/XinMagic_sortbam.py --bam_file possorted_bam.bam --out_dir Results --num_threads 20 
-'''
+```
 
 ### Step 2: 
 ```
