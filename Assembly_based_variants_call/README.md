@@ -1,5 +1,4 @@
-##
-Assemblies based variants calling 
+# Assemblies based variants calling 
 
 
 ## Running The Code:
