@@ -71,8 +71,6 @@ XinMagic/XinMagic_step2.py --out_dir Results_S12878 --num_threads 30 --reference
 
 ## Final Output:
 ##### Results/Assembly_Contigs_files: XinMagic_contig.fasta and XinMagic_Contig_chr*.fasta 
-##### Results/H5_for_molecules: 
-##### Results/results_phased_probmodel:
 
 
 
