@@ -107,7 +107,11 @@ XinMagic/XinMagic_step1_hybrid.py --bam_file_list ./S24385_Lysis_2/Longranger_al
  
 ##### --block_len_use, default = 100000 (100kb)
 
-##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 2" 
+##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will assemble chromsomes 1,2,3,4,5. Use "--chr_start 2 --chr_end 2" will only assemlby chromosome 2. 
+To use the above option "--chr_start, --chr_end", it is recommended to run the below command first to save more time later. 
+```
+python XinMagic/XinMagic_sortbam_hybrid.py --bam_file_list ./S24385_Lysis_2/Longranger_align_bam/S24385_lysis_2/outs/possorted_bam.bam,./S24385_Lysis_2H/Longranger_align_bam/S24385_lysis_2H/outs/possorted_bam.bam --out_dir Results_merged --num_threads 10 --sample_name_list S24385_lysis_2,S24385_lysis_2H 
+```
 
 ### Step 2: (The same as single library assembly)
 ```
@@ -123,9 +127,6 @@ XinMagic/XinMagic_step2.py --out_dir Results_merged --num_threads 30 --reference
 
 ##### --block_len_use, default = 100000 (100kb)
 
-##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will assemble chromsomes 1,2,3,4,5. Use "--chr_start 2 --chr_end 2" will only assemlby chromosome 2. 
-To use the above option "--chr_start, --chr_end", it is recommended to run the below command first to save more time later. 
-```
-python XinMagic/XinMagic_sortbam_hybrid.py --bam_file_list ./S24385_Lysis_2/Longranger_align_bam/S24385_lysis_2/outs/possorted_bam.bam,./S24385_Lysis_2H/Longranger_align_bam/S24385_lysis_2H/outs/possorted_bam.bam --out_dir Results_merged --num_threads 10 --sample_name_list S24385_lysis_2,S24385_lysis_2H 
-```
+##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. 
+
 
