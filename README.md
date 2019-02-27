@@ -27,7 +27,7 @@ Or just use the fullpath of "XinMagic_Step1.py" and "XinMagic_Step2.py"
 
 ### Step 1: 
 ```
-XinMagic/XinMagic_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freebayes.vcf --sample_name S12878 --out_dir Results --uniq_map_dir XinMagic/Uniqness_map
+XinMagic/XinMagic_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freebayes.vcf --sample_name S12878 --out_dir Results_S12878 --uniq_map_dir XinMagic/Uniqness_map
 ```
 #### *Required parameters
 ##### --bam_file: "possorted_bam.bam" is bam file generated from barcode-awere aligner like "Lonranger align". How to get bam file, you can also check <a href="https://github.com/maiziex/XinMagic/blob/master/src/How_to_get_bam_and_vcf.md">here</a>.
@@ -45,16 +45,16 @@ XinMagic/XinMagic_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freeba
  
 ##### --block_len_use, default = 100000 (100kb)
 
-##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will assemble chromsomes 1 - 5. Use "--chr_start 2 --chr_end 2" will only assemlby chromosome 2. 
+##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will assemble chromsomes 1,2,3,4,5. Use "--chr_start 2 --chr_end 2" will only assemlby chromosome 2. 
 
-To use this option "--chr_start, --chr_end", it is recommended to run the below command first to save more time. 
+To use the above option "--chr_start, --chr_end", it is recommended to run the below command first to save more time later. 
 ```
-python XinMagic/XinMagic_sortbam.py --bam_file possorted_bam.bam --out_dir Results --num_threads 20 
+python XinMagic/XinMagic_sortbam.py --bam_file possorted_bam.bam --out_dir Results_S12878 --num_threads 20 
 ```
 
 ### Step 2: 
 ```
-XinMagic/XinMagic_step2.py --out_dir Results --num_threads 30 --reference XinMagic/source/ref.fa
+XinMagic/XinMagic_step2.py --out_dir Results_S12878 --num_threads 30 --reference XinMagic/source/ref.fa
 ```
 #### *Required parameters
 #####  --reference: "XinMagic/source/ref.fa" is the reference fasta file you can download by "./install".
@@ -123,5 +123,9 @@ XinMagic/XinMagic_step2.py --out_dir Results --num_threads 30 --reference XinMag
 
 ##### --block_len_use, default = 100000 (100kb)
 
-##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 2" 
+##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will assemble chromsomes 1,2,3,4,5. Use "--chr_start 2 --chr_end 2" will only assemlby chromosome 2. 
+To use the above option "--chr_start, --chr_end", it is recommended to run the below command first to save more time later. 
+```
+python XinMagic/XinMagic_sortbam.py --bam_file possorted_bam.bam --out_dir Results_S12878 --num_threads 20 
+```
 
