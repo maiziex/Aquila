@@ -1,4 +1,4 @@
-Inputs is 10X fastqs files, to get `bam` files: <br />
+Inputs is 10X `fastqs` files, to get `bam` files: <br />
 
 ```
 longranger align --id=S12878_lysis --reference=./refdata-GRCh38-2.1.0 --fastqs=./S12878_Lysis/Final_fastqs
