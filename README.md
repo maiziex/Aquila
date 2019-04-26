@@ -1,9 +1,9 @@
-# XinMagic
+# Aquila
 
 
 ## Download:
 ```
-git clone https://github.com/maiziex/XinMagic.git
+git clone https://github.com/maiziex/Aquila.git
 ```
 
 ## Dependencies:
