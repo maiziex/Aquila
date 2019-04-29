@@ -1,5 +1,6 @@
 # Assembly-based variants calling 
 
+## Dependencies:
 
 ## Running The Code:
 Put the "Aquila/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
