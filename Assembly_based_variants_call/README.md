@@ -7,10 +7,10 @@ Or use the fullpath of "Aquila_assembly_based_variants_call.py" and "Aquila_phas
 
 
 ```
-Aquila/Aquilla_assembly_based_variants_call.py --in_dir Assembly_results_S12878/Assembly_Contigs_files --out_dir Variants_results_S12878 --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa --sample_name S12878
+Aquila/Aquilla_assembly_based_variants_call.py --assembly_dir Assembly_results_S12878 --out_dir Variants_results_S12878 --ref_file refdata-GRCh38-2.1.0/fasta/genome.fa --sample_name S12878
 ```
 #### *Required parameters
-##### --in_dir: "Assembly_results_S12878/Assembly_Contigs_files" is the output folder from assembly.
+##### --assembly_dir: "Assembly_results_S12878/Assembly_Contigs_files" is the output folder from assembly.
 
 ##### --ref_file: "refdata-GRCh38-2.1.0/fasta/genome.fa" is the reference fasta file from GRCh38.
 
@@ -25,9 +25,9 @@ Aquila/Aquilla_assembly_based_variants_call.py --in_dir Assembly_results_S12878/
 # Phasing all types of variants  
 
 ```
-Aquila/Aquila_phasing_all_variants.py --assembled_vcf Variants_results_S12878/Aquila_final_sorted.vcf.gz --vcf_file S12878_freebayes.vcf --assemble_dir Assembly_results_S12878
+Aquila/Aquila_phasing_all_variants.py --assembled_vcf Variants_results_S12878/Aquila_final_sorted.vcf.gz --vcf_file S12878_freebayes.vcf --assembly_dir Assembly_results_S12878
 ```
 #### *Required parameters
-##### --assemble_dir: "Assembly_results_S12878" is the output folder from assembly.
+##### --assembly_dir: "Assembly_results_S12878" is the output folder from assembly.
 
 
