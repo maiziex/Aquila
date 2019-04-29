@@ -27,7 +27,7 @@ Or just use the fullpath of "Aquila_Step1.py" and "Aquila_Step2.py"
 
 ### Step 1: 
 ```
-Aquila/Aquila_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freebayes.vcf --sample_name S12878 --out_dir Assembly_results_S12878 --uniq_map_dir Aquila/Uniqness_map
+Aquila/bin/Aquila_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freebayes.vcf --sample_name S12878 --out_dir Assembly_results_S12878 --uniq_map_dir Aquila/Uniqness_map
 ```
 #### *Required parameters
 ##### --bam_file: "possorted_bam.bam" is bam file generated from barcode-awere aligner like "Lonranger align". How to get bam file, you can also check <a href="https://github.com/maiziex/Aquila/blob/master/src/How_to_get_bam_and_vcf.md">here</a>.
@@ -53,12 +53,12 @@ Aquila/Aquila_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freebayes.
 
 To use the above option "--chr_start, --chr_end", it is recommended to run the below command first to save more time later. 
 ```
-python Aquila/Aquila_step0_sortbam.py --bam_file possorted_bam.bam --out_dir Results_S12878 --num_threads_for_bwa_mem 20 
+python Aquila/bin/Aquila_step0_sortbam.py --bam_file possorted_bam.bam --out_dir Results_S12878 --num_threads_for_bwa_mem 20 
 ```
 
 ### Step 2: 
 ```
-Aquila/Aquila_step2.py --out_dir Assembly_results_S12878 --num_threads 30 --reference Aquila/source/ref.fa
+Aquila/bin/Aquila_step2.py --out_dir Assembly_results_S12878 --num_threads 30 --reference Aquila/source/ref.fa
 ```
 #### *Required parameters
 #####  --reference: "Aquila/source/ref.fa" is the reference fasta file you can download by "./install".
@@ -90,7 +90,7 @@ Aquila outputs an overall contig file “Aquila_Contig_chr*.fasta” for each ch
 
 ### Step 1: 
 ```
-Aquila/Aquila_step1_hybrid.py --bam_file_list ./S24385_Lysis_2/Longranger_align_bam/S24385_lysis_2/outs/possorted_bam.bam,./S24385_Lysis_2H/Longranger_align_bam/S24385_lysis_2H/outs/possorted_bam.bam --vcf_file_list ./S24385_lysis_2/Freebayes_results/S24385_lysis_2_grch38_ref_freebayes.vcf,./S24385_lysis_2H/Freebayes_results/S24385_lysis_2H_grch38_ref_freebayes.vcf --sample_name_list S24385_lysis_2,S24385_lysis_2H --out_dir Assembly_results_merged --uniq_map_dir Aquila/Uniqness_map
+Aquila/bin/Aquila_step1_hybrid.py --bam_file_list ./S24385_Lysis_2/Longranger_align_bam/S24385_lysis_2/outs/possorted_bam.bam,./S24385_Lysis_2H/Longranger_align_bam/S24385_lysis_2H/outs/possorted_bam.bam --vcf_file_list ./S24385_lysis_2/Freebayes_results/S24385_lysis_2_grch38_ref_freebayes.vcf,./S24385_lysis_2H/Freebayes_results/S24385_lysis_2H_grch38_ref_freebayes.vcf --sample_name_list S24385_lysis_2,S24385_lysis_2H --out_dir Assembly_results_merged --uniq_map_dir Aquila/Uniqness_map
 ```
 #### *Required parameters
 ##### --bam_file: "possorted_bam.bam" is bam file generated from barcode-awere aligner like "Lonranger align". Each bam file is seperately by comma (",").
@@ -117,12 +117,12 @@ Aquila/Aquila_step1_hybrid.py --bam_file_list ./S24385_Lysis_2/Longranger_align_
 ##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will assemble chromsomes 1,2,3,4,5. Use "--chr_start 2 --chr_end 2" will only assemlby chromosome 2. 
 To use the above option "--chr_start, --chr_end", it is recommended to run the below command first to save more time later. 
 ```
-python Aquila/Aquila_step0_sortbam_hybrid.py --bam_file_list ./S24385_Lysis_2/Longranger_align_bam/S24385_lysis_2/outs/possorted_bam.bam,./S24385_Lysis_2H/Longranger_align_bam/S24385_lysis_2H/outs/possorted_bam.bam --out_dir Assembly_results_merged --num_threads_for_bwa_mem 10 --sample_name_list S24385_lysis_2,S24385_lysis_2H 
+python Aquila/bin/Aquila_step0_sortbam_hybrid.py --bam_file_list ./S24385_Lysis_2/Longranger_align_bam/S24385_lysis_2/outs/possorted_bam.bam,./S24385_Lysis_2H/Longranger_align_bam/S24385_lysis_2H/outs/possorted_bam.bam --out_dir Assembly_results_merged --num_threads_for_bwa_mem 10 --sample_name_list S24385_lysis_2,S24385_lysis_2H 
 ```
 
 ### Step 2: (The same as single library assembly)
 ```
-Aquila/Aquila_step2.py --out_dir Assembly_results_merged --num_threads 30 --reference Aquila/source/ref.fa
+Aquila/bin/Aquila_step2.py --out_dir Assembly_results_merged --num_threads 30 --reference Aquila/source/ref.fa
 ```
 #### *Required parameters
 #####  --reference: "Aquila/source/ref.fa" is the reference fasta file you can download by "./install".
