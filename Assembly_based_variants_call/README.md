@@ -7,14 +7,13 @@ Or use the fullpath of "Aquila_assembly_based_variants_call.py" and "Aquila_phas
 
 
 ```
-Aquila/Aquilla_assembly_based_variants_call.py --assembly_dir Assembly_results_S12878 --out_dir Variants_results_S12878 --ref_file Aquila/source/ref.fa --sample_name S12878
+Aquila/Aquilla_assembly_based_variants_call.py --assembly_dir Assembly_results_S12878 --out_dir Variants_results_S12878 --ref_file Aquila/source/ref.fa 
 ```
 #### *Required parameters
-##### --assembly_dir: "Assembly_results_S12878/Assembly_Contigs_files" is the output folder from assembly.
+##### --assembly_dir: "Assembly_results_S12878" is the output folder from assembly.
 
 ##### --ref_file: "Aquila/source/ref.fa" is the reference fasta file from GRCh38.
 
-#####  --sample_name: "S12878" are the sample name you can define. 
 
 
 #### *Optional parameters
