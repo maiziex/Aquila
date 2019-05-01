@@ -1,4 +1,4 @@
-# Assembly-based variants calling 
+# 1. Assembly-based variants calling 
 
 ## Running The Code:
 Put the "Aquila/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
@@ -20,7 +20,7 @@ Aquila/bin/Aquilla_assembly_based_variants_call.py --assembly_dir Assembly_resul
 #### *Final Output
 ##### "Aquila_final_sorted.vcf"
 
-# Phasing all types of variants  
+# 2. Phasing all types of variants  
 
 ```
 Aquila/bin/Aquila_phasing_all_variants.py --assembled_vcf Variants_results_S12878/Aquila_final_sorted.vcf --vcf_file S12878_freebayes.vcf --assembly_dir Assembly_results_S12878
