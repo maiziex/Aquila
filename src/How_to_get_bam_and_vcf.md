@@ -1,4 +1,4 @@
-1. Inputs is 10X `fastqs` files, to get `bam` file: <br />
+1. Inputs is 10X `fastqs` files, to get `bam` file: :Aquila: <br />
 
 To check how to download and use "longranger align" or download human reference genome, go to <a href="https://support.10xgenomics.com/genome-exome/software/downloads/latest">10X GENOMICS Website</a>.
 ```
