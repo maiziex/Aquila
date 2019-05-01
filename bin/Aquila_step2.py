@@ -14,7 +14,7 @@ parser = ArgumentParser(description="Author: xzhou15@cs.stanford.edu\n",usage='u
 parser.add_argument('--chr_start','-start',type=int,help="chromosome start from", default=1)
 parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", default=23)
 parser.add_argument('--out_dir','-o', help="Directory to store output",default="./Results")
-parser.add_argument('--reference','-ref', help="reference fasta file")
+parser.add_argument('--reference','-ref', help="reference fasta file",required=True)
 parser.add_argument('--num_threads','-t',type=int,help="number of threads", default=20)
 parser.add_argument('--block_len_use','-bl',type=int,help="phase block len threshold",default=100000)
 
