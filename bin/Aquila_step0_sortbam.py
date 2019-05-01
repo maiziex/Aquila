@@ -6,7 +6,7 @@ import sys
 script_path = os.path.dirname(os.path.abspath( __file__ ))
 code_path = script_path + "/" 
 parser = ArgumentParser(description="sort bam by qname:")
-parser.add_argument('--bam_file','-b', help="bam file")
+parser.add_argument('--bam_file','-b', help="bam file",required=True)
 parser.add_argument('--out_dir','-o', help="output folder")
 parser.add_argument('--num_threads_for_bwa_mem','-t',type=int, help=" The number of threads you can define for samtoos sort",default=20)
 args = parser.parse_args()
