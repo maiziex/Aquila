@@ -22,7 +22,7 @@ After running "./install.sh", a folder "source" would be download, it includes h
 
 ## Running The Code:
 Put the "Aquila/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
-Or just use the fullpath of "<u>Aquila_Step1.py<u>" and "**Aquila_Step2.py**"
+Or just use the fullpath of "**Aquila_Step1.py<**" and "**Aquila_Step2.py**"
 
 
 ### Step 1: 
