@@ -39,7 +39,7 @@ Aquila/bin/Aquila_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freeba
 #####  --uniq_map_dir: "Aquila/Uniqness_map" is the uniqness file you can download by "./install.sh".
 
 #### *Optional parameters
-#####  --out_dir, default = ./Asssembly_results 
+#####  --out_dir, default = ./Asssembly_results. You can define your own folder, for example "Assembly_results_S12878". 
 
 ##### --block_threshold, default = 200000 (200kb)
  
@@ -64,7 +64,7 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_S12878 --num_threads 30 --
 #####  --reference: "Aquila/source/ref.fa" is the reference fasta file you can download by "./install".
 
 #### *Optional parameters
-#####  --out_dir, default = ./Asssembly_results, make sure it's the same as "--out_dir" from step1 if you want to define your own output directory name.
+#####  --out_dir, default = ./Asssembly_results, make sure it's the same as "--out_dir" from <font color="green"> step1 </font> if you want to define your own output directory name.
 
 #####  --num_threads, default = 20 
 
