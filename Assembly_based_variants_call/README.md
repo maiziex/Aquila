@@ -1,7 +1,5 @@
 # Assembly-based variants calling 
 
-## Dependencies:
-
 ## Running The Code:
 Put the "Aquila/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
 Or use the fullpath of "Aquila_assembly_based_variants_call.py" and "Aquila_phasing_all_variants.py"
