@@ -64,7 +64,7 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_S12878 --num_threads 30 --
 #####  --reference: "Aquila/source/ref.fa" is the reference fasta file you can download by "./install".
 
 #### *Optional parameters
-#####  --out_dir, default = ./Asssembly_results, make sure it's the same as "--out_dir" from **step1** if you want to define your own output directory name.
+#####  --out_dir, default = ./Asssembly_results, make sure it's the same as "--out_dir" from ***Step1*** if you want to define your own output directory name.
 
 #####  --num_threads, default = 20 
 
