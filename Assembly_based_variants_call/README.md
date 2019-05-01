@@ -2,7 +2,7 @@
 
 ## Running The Code:
 Put the "Aquila/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
-Or use the fullpath of "*Aquila_assembly_based_variants_call.py*" and "*Aquila_phasing_all_variants.py*"
+Or use the fullpath of "**Aquila_assembly_based_variants_call.py**" and "**Aquila_phasing_all_variants.py**"
 
 ```
 Aquila/bin/Aquilla_assembly_based_variants_call.py --assembly_dir Assembly_results_S12878 --out_dir Variants_results_S12878 --ref_file Aquila/source/ref.fa 
