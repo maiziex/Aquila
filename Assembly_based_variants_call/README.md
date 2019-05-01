@@ -1,4 +1,4 @@
-# 1. Assembly-based variants calling :bird:
+# 1. Assembly-based variants calling :milky_way:
 
 ## Running The Code:
 Put the "Aquila/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
