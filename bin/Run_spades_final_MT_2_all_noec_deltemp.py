@@ -22,7 +22,7 @@ args = parser.parse_args()
 
 def use_spades(one_file_fastq,out_dir,xin):
     try:
-        use_cmd = code_path + "SPAdes-3.13.0-Linux/" + "spades.py -t 5 --only-assembler --12 " + one_file_fastq + " -o " + out_dir 
+        use_cmd = code_path + "SPAdes-3.13.0-Linux/bin/" + "spades.py -t 5 --only-assembler --12 " + one_file_fastq + " -o " + out_dir 
     except:
         use_cmd = "spades.py -t 5 --only-assembler --12 " + one_file_fastq + " -o " + out_dir 
 
