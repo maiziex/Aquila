@@ -57,9 +57,15 @@ python Aquila/bin/Aquila_step0_sortbam.py --bam_file possorted_bam.bam --out_dir
 ```
 
 #### Memory/Time Usage For Step 1
+##### running Step 1 for WGS on a single node with large memory
 | Memory| Time for WGS on a single node  | 
 | --- | --- | 
 | 500GB | 2-00:00:00 |
+
+##### running Step 1 for chromosomes parallelly on multiple(23) nodes
+| Memory| Time for chr1 on a single node | 
+| --- | --- | 
+| 100GB | 18:00:00 |
 
 
 
@@ -79,10 +85,17 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_S12878 --num_threads 30 --
 
 ##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 2" 
 
-#### Memory/Time Usage For Step 2
-| Memory| Time for WGS **on a single node**  | 
-| --- | --- |  
-| 150GB | 2-12:00:00 |
+##### running Step 2 for WGS on a single node with large memory
+| Memory| Time for WGS on a single node  | 
+| --- | --- | 
+| 100GB | 2-12:00:00 |
+
+##### running Step 2 for chromosomes parallelly on multiple nodes
+| Memory| Time for chr1 on a single node | 
+| --- | --- | 
+| 100GB | 10:00:00 |
+
+
 
 ## Final Output:
 ##### Assembly_Results_S12878/Assembly_Contigs_files: Aquila_contig.fasta and Aquila_Contig_chr*.fasta 
