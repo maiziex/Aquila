@@ -58,14 +58,14 @@ python Aquila/bin/Aquila_step0_sortbam.py --bam_file possorted_bam.bam --out_dir
 
 #### Memory/Time Usage For Step 1
 ##### running Step 1 for WGS on a single node with large memory
-| Memory| Time for WGS on a single node  | 
-| --- | --- | 
-| 500GB | 2-00:00:00 |
+Coverage | Memory| Time for WGS on a single node  | 
+--- | --- | --- | 
+60X | 500GB | 2-00:00:00 |
 
 ##### running Step 1 for chromosomes parallelly on multiple(23) nodes
-| Memory| Time for chr1 on a single node | 
+Coverage | Memory| Time for chr1 on a single node | 
 | --- | --- | 
-| 100GB | 18:00:00 |
+60X | 100GB | 18:00:00 |
 
 
 
