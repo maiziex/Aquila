@@ -21,7 +21,7 @@ Aquila/bin/Aquilla_assembly_based_variants_call.py --assembly_dir Assembly_resul
 ##### "Aquila_final_sorted.vcf"
 
 #### Memory Usage
-| Memory| --num_of_threads | Time |
+| Memory| --num_of_threads | Time for WGS |
 | --- | --- | --- | 
 | 100GB | 1 |1-10:24:32 |
 | 100GB | 2 | |
