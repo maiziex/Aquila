@@ -58,7 +58,7 @@ python Aquila/bin/Aquila_step0_sortbam.py --bam_file possorted_bam.bam --out_dir
 
 #### Memory/Time Usage For Step 1
 | Memory| Time for WGS on a single node  | 
-| --- | --- | --- | 
+| --- | --- | 
 | 500GB | 2-00:00:00 |
 
 
@@ -81,7 +81,7 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_S12878 --num_threads 30 --
 
 #### Memory/Time Usage For Step 2
 | Memory| Time for WGS **on a single node**  | 
-| --- | --- | --- | 
+| --- | --- |  
 | 150GB | 2-12:00:00 |
 
 ## Final Output:
