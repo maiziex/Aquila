@@ -64,7 +64,7 @@ Coverage | Memory| Time for WGS on a single node  |
 
 ##### running Step 1 for chromosomes parallelly on multiple(23) nodes
 Coverage | Memory| Time for chr1 on a single node | 
-| --- | --- | 
+--- | --- | --- | 
 60X | 100GB | 18:00:00 |
 
 
@@ -86,14 +86,14 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_S12878 --num_threads 30 --
 ##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 2" 
 
 ##### running Step 2 for WGS on a single node with large memory
-| Memory| Time for WGS on a single node  | 
-| --- | --- | 
-| 100GB | 2-12:00:00 |
+Coverage| Memory| Time for WGS on a single node  | 
+ ---| --- | --- | 
+60X| 100GB | 2-12:00:00 |
 
 ##### running Step 2 for chromosomes parallelly on multiple nodes
-| Memory| Time for chr1 on a single node | 
-| --- | --- | 
-| 100GB | 10:00:00 |
+Coverage| Memory| Time for chr1 on a single node | 
+--- | --- | --- | 
+60X| 100GB | 10:00:00 |
 
 
 
