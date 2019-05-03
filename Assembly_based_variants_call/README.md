@@ -22,7 +22,7 @@ Aquila/bin/Aquilla_assembly_based_variants_call.py --assembly_dir Assembly_resul
 
 #### Memory Usage
 | Memory| --num_of_threads | time |
-
+| --- | --- | --- | 
 | 100GB | 1 |1-10:24:32 |
 | 100GB | 2 | |
 | 600GB | 5 | 09:31:08 |
