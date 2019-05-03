@@ -1,6 +1,7 @@
 # change permission
 cd bin
 chmod +x *.py
+chmod -R 777 k8-0.2.4
 tar -xzf SPAdes-3.13.0-Linux.tar.gz
 rm SPAdes-3.13.0-Linux.tar.gz
 cd ..
