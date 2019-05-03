@@ -20,6 +20,12 @@ Aquila/bin/Aquilla_assembly_based_variants_call.py --assembly_dir Assembly_resul
 #### *Final Output
 ##### "Aquila_final_sorted.vcf"
 
+#### Memory Usage
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
+
 # 2. Phasing all types of variants  :eagle:
 
 ```
