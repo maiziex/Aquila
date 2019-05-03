@@ -21,10 +21,11 @@ Aquila/bin/Aquilla_assembly_based_variants_call.py --assembly_dir Assembly_resul
 ##### "Aquila_final_sorted.vcf"
 
 #### Memory Usage
-| Command | Description |
-| --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+| Memory| --num_of_threads | time |
+| --- | --- |--- |
+| 100GB | 1 |1-10:24:32 |
+| 100GB | 2 | |
+| 600GB | 5 | 09:31:08 |
 
 # 2. Phasing all types of variants  :eagle:
 
