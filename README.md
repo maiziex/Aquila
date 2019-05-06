@@ -108,7 +108,7 @@ Coverage| Memory| Time for chr1 on a single node |
  -->
 
 ### Clean Data
-##### If your hard drive storage is limited, it suggested to quily clean some data by running "Aquila_clean.py"
+##### If your hard drive storage is limited, it is suggested to quily clean some data by running "Aquila_clean.py". Or you can keep them for some analysis. 
 ```
 Aquila/bin/Aquila_clean.py --out_dir Assembly_results_S12878 
 ```
