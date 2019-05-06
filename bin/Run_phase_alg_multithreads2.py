@@ -18,7 +18,7 @@ code_path = script_path + "/"
 
 parser = ArgumentParser(description="phase molecules:")
 parser.add_argument('--chr_start','-start',type=int,help="chromosome start from", default=1)
-parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", default=22)
+parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", default=23)
 parser.add_argument('--overlap_threshold','-t1',type=int,help="overlap threshold", default=3)
 parser.add_argument('--support_threshold','-t2',type=int,help="support threshold", default=5)
 parser.add_argument('--sample_name','-s',help="sample name")
