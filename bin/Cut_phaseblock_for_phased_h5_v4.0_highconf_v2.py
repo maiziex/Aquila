@@ -11,7 +11,7 @@ import time
 from subprocess import Popen
 parser = ArgumentParser(description="Cut phase block for local assembly:")
 parser.add_argument('--chr_start','-start',type=int,help="chromosome start from", default=1)
-parser.add_argument('--chr_end','-end',type=int,help="chromosome end at", default=1)
+parser.add_argument('--chr_end','-end',type=int,help="chromosome end at", default=23)
 parser.add_argument('--block_threshold','-t',type=int,help="phase block threshold")
 parser.add_argument('--block_len_use','-l',type=int,help="phase block len threshold")
 parser.add_argument('--out_dir','-o_dir', help="Directory to store outputs")
