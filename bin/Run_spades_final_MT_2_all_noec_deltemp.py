@@ -21,7 +21,7 @@ parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", defaul
 args = parser.parse_args()
 num_threads_spades = int(args.num_threads_spades)
 
-def use_spades(one_file_fastq,out_dir,num_threads_spades,xin):
+def use_spades(one_file_fastq,out_dir,xin):
     try:
         use_cmd = code_path + "SPAdes-3.13.0-Linux/bin/" + "spades.py -t " + str(num_threads_spades) + " --only-assembler --12 " + one_file_fastq + " -o " + out_dir 
     except:
