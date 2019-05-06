@@ -16,7 +16,7 @@ parser.add_argument('--num_threads','-nt', help="number of threads")
 parser.add_argument('--out_dir','-o', help="out dir")
 parser.add_argument('--minicontig_dir','-minicontig_o', help="minicontig dir")
 parser.add_argument('--chr_start','-start',type=int,help="chromosome start from", default=1)
-parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", default=22)
+parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", default=23)
 args = parser.parse_args()
 
 
