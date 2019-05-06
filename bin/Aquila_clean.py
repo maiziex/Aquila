@@ -12,7 +12,7 @@ parser = ArgumentParser(description="Clean Assembly Data by Aquila:")
 parser.add_argument('--assembly_dir','-i', help="assembly folder",required=True)
 parser.add_argument('--chr_start','-start',type=int,help="chromosome start from", default=1)
 parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", default=23)
-parser.add_argument('--num_of_threads','-nt', help="number of threads",default= 10)
+parser.add_argument('--num_of_threads','-nt', help="number of threads",default= 20)
 args = parser.parse_args()
 
 def del_one_file(one_file,xin):
@@ -67,14 +67,13 @@ def Aquila_clean(in_dir,chr_start,chr_end,num_of_threads):
 
 
 if __name__ == "__main__":
-    in_dir = args.assembly_dir + "/"
-    num_of_threads = int(args.num_of_threads)
-    chr_start = args.chr_start
-    chr_end = args.chr_end
-    local_assembly_dir = in_dir + "Local_Assembly_by_chunks/"
     if len(sys.argv) == 1:
         Popen("python3 " + "Aquila_clean.py -h",shell=True).wait()
     else:
+        in_dir = args.assembly_dir + "/"
+        num_of_threads = int(args.num_of_threads)
+        chr_start = args.chr_start
+        chr_end = args.chr_end
         Aquila_clean(in_dir,chr_start,chr_end,num_of_threads)
 
 
