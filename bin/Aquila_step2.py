@@ -16,7 +16,7 @@ parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", defaul
 parser.add_argument('--out_dir','-o', help="Directory to store output",default="./Results")
 parser.add_argument('--reference','-ref', help="reference fasta file",required=True)
 parser.add_argument('--num_threads','-t',type=int,help="number of threads", default=30)
-parser.add_argument('--num_threads_spades','-t',type=int,help="number of threads for spades", default=5)
+parser.add_argument('--num_threads_spades','-t_spades',type=int,help="number of threads for spades", default=5)
 parser.add_argument('--block_len_use','-bl',type=int,help="phase block len threshold",default=100000)
 
 args = parser.parse_args()
