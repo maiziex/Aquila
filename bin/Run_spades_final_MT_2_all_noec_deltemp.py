@@ -12,19 +12,20 @@ import multiprocessing
 script_path = os.path.dirname(os.path.abspath( __file__ ))
 code_path = script_path + "/" 
 parser = ArgumentParser(description="run local assembly by spades:")
-parser.add_argument('--num_threads','-nt', help="number of threads")
+parser.add_argument('--num_threads','-nt', help="number of threads",default=30)
+parser.add_argument('--num_threads_spades','-nt', help="number of threads for spades",default=5)
 parser.add_argument('--out_dir','-o', help="out dir")
 parser.add_argument('--minicontig_dir','-minicontig_o', help="minicontig dir")
 parser.add_argument('--chr_start','-start',type=int,help="chromosome start from", default=1)
 parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", default=23)
 args = parser.parse_args()
+num_threads_spades = int(args.num_threads_spades)
 
-
-def use_spades(one_file_fastq,out_dir,xin):
+def use_spades(one_file_fastq,out_dir,num_threads_spades,xin):
     try:
-        use_cmd = code_path + "SPAdes-3.13.0-Linux/bin/" + "spades.py -t 5 --only-assembler --12 " + one_file_fastq + " -o " + out_dir 
+        use_cmd = code_path + "SPAdes-3.13.0-Linux/bin/" + "spades.py -t " + str(num_threads_spades) + " --only-assembler --12 " + one_file_fastq + " -o " + out_dir 
     except:
-        use_cmd = "spades.py -t 5 --only-assembler --12 " + one_file_fastq + " -o " + out_dir 
+        use_cmd = "spades.py -t " + str(num_threads_spades) + " --only-assembler --12 " + one_file_fastq + " -o " + out_dir 
 
     Popen(use_cmd,shell=True).wait()
 
