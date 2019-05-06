@@ -7,6 +7,7 @@ from multiprocessing import Pool,cpu_count,active_children,Manager
 import time
 script_path = os.path.dirname(os.path.abspath( __file__ ))
 code_path = script_path + "/" 
+__author__ = "Xin Zhou@Stanford"
 
 parser = ArgumentParser(description="sort bam by qname:")
 parser.add_argument('--bam_file_list','-bam',help="bam file list",required=True)
