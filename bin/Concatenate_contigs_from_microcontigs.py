@@ -13,7 +13,7 @@ code_path = script_path + "/"
 
 parser = ArgumentParser(description="Run all:")
 parser.add_argument('--chr_start','-start',type=int,help="chromosome start from", default=1)
-parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", default=22)
+parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", default=23)
 parser.add_argument('--ref_file','-ref',help="ref file")
 parser.add_argument('--ref_dir','-dir',help="ref dir")
 parser.add_argument('--cut_threshold','-ct',type=int,help="cut threshold: 100000")
