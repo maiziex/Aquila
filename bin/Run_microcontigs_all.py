@@ -13,7 +13,7 @@ code_path = script_path + "/"
 
 parser = ArgumentParser(description="Run microcontigs all:")
 parser.add_argument('--chr_start','-start',type=int,help="chromosome start from", default=1)
-parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", default=22)
+parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", default=23)
 parser.add_argument('--in_dir','-i_dir', help="Directory for inputs")
 parser.add_argument('--out_dir','-o_dir', help="Directory to store outputs", default='results_/')
 parser.add_argument('--output_prefix','-output_prefix', help="output file")
