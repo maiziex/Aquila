@@ -68,8 +68,8 @@ if __name__ == "__main__":
         block_len_use = args.block_len_use
         block_threshold = args.block_threshold
         uniq_map_dir = args.uniq_map_dir + "/"
-        num_threads = args.num_threads
-        num_threads_for_bwa_mem = args.num_threads_for_bwa_mem
+        num_threads = int(args.num_threads)
+        num_threads_for_bwa_mem = int(args.num_threads_for_bwa_mem)
         sample_name = args.sample_name
         h5_dir = args.out_dir + "/H5_for_molecules/"
         HighConf_file_dir = args.out_dir + "/HighConf_file/"
