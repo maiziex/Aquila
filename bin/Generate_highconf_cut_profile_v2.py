@@ -18,7 +18,7 @@ code_path = script_path + "/"
 parser = ArgumentParser(description="Run depth all:")
 parser.add_argument('--bam_file','-bam',help="input sorted bam file")
 parser.add_argument('--chr_start','-start',type=int,help="chromosome start from", default=1)
-parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", default=22)
+parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", default=23)
 parser.add_argument('--mbq','-bq',type=int,help="minimum base quality to consider a base for haplotype fragment, default 13", default=13)
 parser.add_argument('--mmq','-mq',type=int,help="minimum read mapping quality to consider a read for phasing, default 20", default=20)
 parser.add_argument('--out_dir','-o_dir', help="Directory to store outputs")
