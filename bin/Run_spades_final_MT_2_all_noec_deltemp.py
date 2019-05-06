@@ -13,7 +13,7 @@ script_path = os.path.dirname(os.path.abspath( __file__ ))
 code_path = script_path + "/" 
 parser = ArgumentParser(description="run local assembly by spades:")
 parser.add_argument('--num_threads','-nt', help="number of threads",default=30)
-parser.add_argument('--num_threads_spades','-nt', help="number of threads for spades",default=5)
+parser.add_argument('--num_threads_spades','-nt_spades', help="number of threads for spades",default=5)
 parser.add_argument('--out_dir','-o', help="out dir")
 parser.add_argument('--minicontig_dir','-minicontig_o', help="minicontig dir")
 parser.add_argument('--chr_start','-start',type=int,help="chromosome start from", default=1)
