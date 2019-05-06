@@ -81,7 +81,9 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_S12878 --num_threads 30 --
 #### *Optional parameters
 #####  --out_dir, default = ./Asssembly_results, make sure it's the same as "--out_dir" from ***Step1*** if you want to define your own output directory name.
 
-#####  --num_threads, default = 20 
+#####  --num_threads, default = 30, this determines the number of files assembled simultaneously by SPAdes.  
+
+#####  --num_threads_spades, default = 5, this is the "-t" for SPAdes. 
 
 ##### --block_len_use, default = 100000 (100kb)
 
