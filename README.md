@@ -21,8 +21,8 @@ chmod +x install.sh
 After running "./install.sh", a folder "source" would be download, it includes human GRCh38 reference fasta file, or you could also just download it by yourself from the corresponding official websites. 
 
 ## Running The Code:
-<!-- Put the "Aquila/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
-Or just use the fullpath of "**Aquila_Step1.py**" and "**Aquila_Step2.py**"... -->
+Put the "Aquila/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
+Or just use the fullpath of "**Aquila_Step1.py**" and "**Aquila_Step2.py**"
 
 
 ### Step 1: 
@@ -58,17 +58,19 @@ python Aquila/bin/Aquila_step0_sortbam.py --bam_file possorted_bam.bam --out_dir
 
 #### Memory/Time Usage For Step 1
 ##### Running Step 1 for WGS on a single node with large memory
+<!-- 
 Coverage | Memory| Time for WGS on a single node  | 
 --- | --- | --- | 
 60X | 350GB | 2-00:00:00 |
 90X | 500GB | 2-00:00:00 |
-
+ -->
 ##### Running Step 1 for chromosomes parallelly on multiple(23) nodes
+<!-- 
 Coverage | Memory| Time for chr1 on a single node | 
 --- | --- | --- | 
 60X | 100GB | 18:00:00 |
 90X | 150GB | 18:00:00 |
-
+ -->
 
 
 ### Step 2: 
@@ -90,17 +92,19 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_S12878 --num_threads 30 --
 ##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 2" 
 
 ##### Running Step 2 for WGS on a single node with large memory
+<!-- 
 Coverage| Memory| Time for WGS on a single node  | 
  ---| --- | --- | 
 60X| 100GB | 2-12:00:00 |
 90X| 100GB | 2-12:00:00 |
-
+ -->
 ##### Running Step 2 for chromosomes parallelly on multiple nodes
+<!-- 
 Coverage| Memory| Time for chr1 on a single node | 
 --- | --- | --- | 
 60X| 100GB | 10:00:00 |
 90X| 100GB | 10:00:00 |
-
+ -->
 
 
 ## Final Output:
