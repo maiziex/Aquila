@@ -20,7 +20,7 @@ parser.add_argument('--mbq_threshold','-bq',type=int,help="mbq threshold", defau
 parser.add_argument('--mmq_threshold','-mq',type=int,help="mmq threshold", default=20)
 parser.add_argument('--chr_start','-start',type=int,help="chromosome start from", default=1)
 parser.add_argument('--boundary','-b',type=int,help="cut boundary", default=1)
-parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", default=22)
+parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", default=23)
 parser.add_argument('--num_threads','-n',type=int,help="number of threads", default=8)
 parser.add_argument('--sample_name','-s',help="sample name")
 parser.add_argument('--out_dir','-o',help="output folder")
