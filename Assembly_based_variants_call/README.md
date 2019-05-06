@@ -24,6 +24,7 @@ Aquila/bin/Aquilla_assembly_based_variants_call.py --assembly_dir Assembly_resul
 | Memory| --num_of_threads | Time for WGS |
 | --- | --- | --- | 
 | 100GB | 1 |1-10:24:32 |
+| 150GB | 2 |17:35:45 |
 | 300GB | 3 | 13:12:59|
 | 600GB | 5 | 09:31:08|
 
