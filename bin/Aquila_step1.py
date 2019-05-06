@@ -25,7 +25,6 @@ args = parser.parse_args()
 
 
 def Get_fragment_files(bam_file,vcf_file,chr_start,chr_end,h5_dir,num_threads):
-    #use_cmd = "python3 " + code_path + "Run_h5_all_multithreads_new.py" + " --bam_file " + bam_file + " --vcf_file " + vcf_file + " --sample_name " + sample_name + " --chr_start " + str(chr_start) + " --chr_end " + str(chr_end) + " --mbq 13 --mmq 20 --boundary 50000 " + " --num_threads " + str(num_threads) + " --out_dir " + h5_dir
     use_cmd = "python3 " + code_path + "Run_h5_all_multithreads.py" + " --bam_file " + bam_file + " --vcf_file " + vcf_file + " --sample_name " + sample_name + " --chr_start " + str(chr_start) + " --chr_end " + str(chr_end) + " --mbq 13 --mmq 0 --boundary 50000 " + " --num_threads " + str(num_threads) + " --out_dir " + h5_dir
     Popen(use_cmd,shell=True).wait()
 
