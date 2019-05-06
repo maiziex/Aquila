@@ -74,8 +74,8 @@ if __name__ == "__main__":
         chr_end = args.chr_end
         ref_file = args.reference
         cut_threshold = args.block_len_use
-        num_threads = args.num_threads
-        num_threads_spades = args.num_threads_spades
+        num_threads = int(args.num_threads)
+        num_threads_spades = int(args.num_threads_spades)
         ref_dir = args.out_dir + "/ref_dir/"
         if os.path.exists(ref_dir):
             print("using existing output folder: " + ref_dir)
