@@ -5,6 +5,7 @@ import os
 import sys
 script_path = os.path.dirname(os.path.abspath( __file__ ))
 code_path = script_path + "/" 
+__author__ = "Xin Zhou@Stanford"
 parser = ArgumentParser(description="sort bam by qname:")
 parser.add_argument('--bam_file','-b', help="bam file",required=True)
 parser.add_argument('--out_dir','-o', help="output folder",default="./Asssembly_results")
