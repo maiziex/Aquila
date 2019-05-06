@@ -15,7 +15,8 @@ parser.add_argument('--chr_start','-start',type=int,help="chromosome start from"
 parser.add_argument('--chr_end','-end',type=int,help="chromosome end by", default=23)
 parser.add_argument('--out_dir','-o', help="Directory to store output",default="./Results")
 parser.add_argument('--reference','-ref', help="reference fasta file",required=True)
-parser.add_argument('--num_threads','-t',type=int,help="number of threads", default=20)
+parser.add_argument('--num_threads','-t',type=int,help="number of threads", default=30)
+parser.add_argument('--num_threads_spades','-t',type=int,help="number of threads for spades", default=5)
 parser.add_argument('--block_len_use','-bl',type=int,help="phase block len threshold",default=100000)
 
 args = parser.parse_args()
@@ -54,8 +55,8 @@ def extract_ref_chr(ref_file,chr_num,out_dir):
     print(total_len)
 
 
-def local_assembly_for_small_chunks(chr_start,chr_end,num_threads,Local_Assembly_dir,Assembly_Contigs_dir):
-    use_cmd = "python " + code_path + "Run_spades_final_MT_2_all_noec_deltemp.py" + " --num_threads " + str(num_threads) + " --chr_start " + str(chr_start) + " --chr_end " + str(chr_end) + " --out_dir " + Local_Assembly_dir + " --minicontig_dir " + Assembly_Contigs_dir
+def local_assembly_for_small_chunks(chr_start,chr_end,num_threads,num_threads_spades,Local_Assembly_dir,Assembly_Contigs_dir):
+    use_cmd = "python " + code_path + "Run_spades_final_MT_2_all_noec_deltemp.py" + " --num_threads " + str(num_threads) + " --num_threads_spades " + str(num_threads_spades) + " --chr_start " + str(chr_start) + " --chr_end " + str(chr_end) + " --out_dir " + Local_Assembly_dir + " --minicontig_dir " + Assembly_Contigs_dir
     Popen(use_cmd,shell=True).wait()
 
 
@@ -74,6 +75,7 @@ if __name__ == "__main__":
         ref_file = args.reference
         cut_threshold = args.block_len_use
         num_threads = args.num_threads
+        num_threads_spades = args.num_threads_spades
         ref_dir = args.out_dir + "/ref_dir/"
         if os.path.exists(ref_dir):
             print("using existing output folder: " + ref_dir)
@@ -98,6 +100,6 @@ if __name__ == "__main__":
         phase_blocks_cut_highconf_dir = args.out_dir + "/phase_blocks_cut_highconf/"
         Local_Assembly_dir = args.out_dir + "/Local_Assembly_by_chunks/"
 
-        local_assembly_for_small_chunks(chr_start,chr_end,num_threads,Local_Assembly_dir,Assembly_Contigs_dir)
+        local_assembly_for_small_chunks(chr_start,chr_end,num_threads,num_threads_spades,Local_Assembly_dir,Assembly_Contigs_dir)
         Complete_contiguity(chr_start,chr_end,Assembly_Contigs_dir,phase_blocks_cut_highconf_dir,cut_threshold,ref_dir,ref_idx_file)
     
