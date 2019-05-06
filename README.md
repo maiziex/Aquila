@@ -107,6 +107,11 @@ Coverage| Memory| Time for chr1 on a single node |
 90X| 100GB | 10:00:00 |
  -->
 
+### Clean Data
+##### If your hard drive storage is limited, it suggested to quily clean some data by running "Aquila_clean.py"
+```
+Aquila/bin/Aquila_clean.py --out_dir Assembly_results_S12878 
+```
 
 ## Final Output:
 ##### Assembly_Results_S12878/Assembly_Contigs_files: Aquila_contig.fasta and Aquila_Contig_chr*.fasta 
