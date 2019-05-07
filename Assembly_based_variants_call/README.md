@@ -25,7 +25,7 @@ Aquila/bin/Aquilla_assembly_based_variants_call.py --assembly_dir Assembly_resul
 | --- | --- | --- | 
 | 100GB | 1 |1-10:24:32 |
 | 150GB | 2 |17:35:45 |
-| 300GB | 3 | 13:12:59|
+| 250GB | 3 | 13:25:06|
 | 600GB | 5 | 09:31:08|
 
 # 2. Phasing all types of variants  :eagle:
