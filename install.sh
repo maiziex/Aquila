@@ -8,12 +8,12 @@ cd ..
 
 
 # download the reference file (GRCh38)
-wget http://xinzhouneuroscience.org/wp-content/uploads/2018/11/source.tar.gz
+wget http://xinzhouneuroscience.org/wp-content/uploads/2019/05/source.tar.gz
 tar -xvf source.tar.gz
 rm source.tar.gz
 
 
-wget http://xinzhouneuroscience.org/wp-content/uploads/2018/11/Uniqness_map.tar.gz
+wget http://xinzhouneuroscience.org/wp-content/uploads/2019/05/Uniqness_map.tar.gz
 tar -xvf Uniqness_map.tar.gz
 rm Uniqness_map.tar.gz
 
