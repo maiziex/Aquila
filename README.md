@@ -99,13 +99,13 @@ Coverage| Memory| Time for WGS on a single node  |
 60X| 100GB | 2-12:00:00 |
 90X| 100GB | 2-12:00:00 |
  -->
- <!-- 
+
 ##### Running Step 2 for chromosomes parallelly on multiple nodes
-Coverage| Memory| Time for chr1 on a single node | 
+Coverage| Memory| Time for chr1 on a single node | --num_threads | --num_threads 10|
 --- | --- | --- | 
-60X| 100GB | 10:00:00 |
-90X| 100GB | 10:00:00 |
- -->
+60X| 100GB | 10:00:00 |30 | 10|
+90X| 100GB | 17:55:08 |30 | 10|
+
 
 ### Clean Data
 ##### If your hard drive storage is limited, it is suggested to quily clean some data by running "Aquila_clean.py". Or you can keep them for some analysis. 
