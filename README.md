@@ -55,14 +55,14 @@ To use the above option "--chr_start, --chr_end", it is recommended to run the b
 ```
 python Aquila/bin/Aquila_step0_sortbam.py --bam_file possorted_bam.bam --out_dir Results_S12878 --num_threads_for_bwa_mem 20 
 ```
-<!-- 
+<!--   -->
 #### Memory/Time Usage For Step 1
 ##### Running Step 1 for WGS on a single node with large memory
 Coverage | Memory| Time for WGS on a single node  | 
 --- | --- | --- | 
 60X | 350GB | 2-00:00:00 |
 90X | 500GB | 2-00:00:00 |
- -->
+
 
 ##### Running Step 1 for chromosomes parallelly on multiple(23) nodes
 
