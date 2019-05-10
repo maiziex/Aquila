@@ -57,6 +57,13 @@ python Aquila/bin/Aquila_step0_sortbam.py --bam_file possorted_bam.bam --out_dir
 ```
 <!--   -->
 #### Memory/Time Usage For Step 1
+##### Running Step 1 for chromosomes parallelly on multiple(23) nodes
+
+Coverage | Memory| Time for chr1 on a single node | 
+--- | --- | --- | 
+60X | 100GB | 18:00:00 |
+90X | 150GB | 18:00:00 |
+
 ##### Running Step 1 for WGS on a single node with large memory
 Coverage | Memory| Time for WGS on a single node  | 
 --- | --- | --- | 
@@ -64,12 +71,6 @@ Coverage | Memory| Time for WGS on a single node  |
 90X | 500GB | 2-00:00:00 |
 
 
-##### Running Step 1 for chromosomes parallelly on multiple(23) nodes
-
-Coverage | Memory| Time for chr1 on a single node | 
---- | --- | --- | 
-60X | 100GB | 18:00:00 |
-90X | 150GB | 18:00:00 |
 
 
 
@@ -93,6 +94,12 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_S12878 --num_threads 30 --
 
 <!-- -->
 #### Memory/Time Usage For Step 2
+##### Running Step 2 for chromosomes parallelly on multiple nodes
+Coverage| Memory| Time for chr1 on a single node | --num_threads | --num_threads_spades|
+--- | --- | --- | ---|---|
+60X| 100GB | 10:00:00 |30 | 10|
+90X| 100GB | 17:55:08 |30 | 10|
+
 ##### Running Step 2 for WGS on a single node with large memory
 Coverage| Memory| Time for WGS on a single node  | --num_threads | --num_threads_spades|
  ---| --- | --- | ---|---|
@@ -100,11 +107,7 @@ Coverage| Memory| Time for WGS on a single node  | --num_threads | --num_threads
 90X| 100GB | 2-12:00:00 |30 | 10|
  
 
-##### Running Step 2 for chromosomes parallelly on multiple nodes
-Coverage| Memory| Time for chr1 on a single node | --num_threads | --num_threads_spades|
---- | --- | --- | ---|---|
-60X| 100GB | 10:00:00 |30 | 10|
-90X| 100GB | 17:55:08 |30 | 10|
+
 
 
 ### Clean Data
