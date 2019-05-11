@@ -150,7 +150,10 @@ def Call_SNV_info_from_contigs(chr_start,chr_end,out_dir,num_of_threads):
                 print("finished chr" + str(chr_num))
             else:
                 pool = Pool(num_of_threads)
-
+    curr_file = out_dir + "Aquila_SNPs.vcf"
+    exists = os.path.exists(curr_file)
+    if exists:
+        Popen("rm -rf " + curr_file)
     for chr_num in range(chr_start,chr_end + 1):
         one_vcf = out_dir + "Aquila_SNPs_chr" + str(chr_num) + ".vcf"
         cat_cmd = "cat " + one_vcf  + " >> " + out_dir + "Aquila_SNPs.vcf"
@@ -176,7 +179,10 @@ def Call_SV_del_from_contigs(chr_start,chr_end,out_dir,num_of_threads):
                 print("finished chr" + str(chr_num))
             else:
                 pool = Pool(num_of_threads)
-
+    curr_file = out_dir + "Aquila_DEL.vcf"
+    exists = os.path.exists(curr_file)
+    if exists:
+        Popen("rm -rf " + curr_file)
     for chr_num in range(chr_start,chr_end + 1):
         one_vcf = out_dir + "Aquila_DEL_chr" + str(chr_num) + ".vcf"
         cat_cmd = "cat " + one_vcf  + " >> " + out_dir + "Aquila_DEL.vcf"
@@ -203,7 +209,10 @@ def Call_SV_ins_from_contigs(chr_start,chr_end,out_dir,num_of_threads):
                 print("finished chr" + str(chr_num))
             else:
                 pool = Pool(num_of_threads)
-
+    curr_file = out_dir + "Aquila_INS.vcf"
+    exists = os.path.exists(curr_file)
+    if exists:
+        Popen("rm -rf " + curr_file)
     for chr_num in range(chr_start,chr_end + 1):
         one_vcf = out_dir + "Aquila_INS_chr" + str(chr_num) + ".vcf"
         cat_cmd = "cat " + one_vcf  + " >> " + out_dir + "Aquila_INS.vcf"
