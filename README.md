@@ -61,14 +61,14 @@ python Aquila/bin/Aquila_step0_sortbam.py --bam_file possorted_bam.bam --out_dir
 
 Coverage | Memory| Time for chr1 on a single node | 
 --- | --- | --- | 
-60X | 100GB | 18:00:00 |
+60X | 100GB | 13:12:35 |
 90X | 150GB | 18:00:00 |
 
 ##### Running Step 1 for WGS on a single node with large memory
 Coverage | Memory| Time for WGS on a single node  | 
 --- | --- | --- | 
-60X | 350GB | 2-00:00:00 |
-90X | 500GB | 2-00:00:00 |
+60X | 450GB | 2-14:27:37 |
+90X | 500GB | 3-12:00:00 |
 
 
 
