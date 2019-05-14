@@ -97,14 +97,14 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_S12878 --num_threads 30 --
 ##### Running Step 2 for chromosomes parallelly on multiple nodes
 Coverage| Memory| Time for chr1 on a single node | --num_threads | --num_threads_spades|
 --- | --- | --- | ---|---|
-60X| 100GB | 10:00:00 |30 | 10|
-90X| 100GB | 17:55:08 |30 | 10|
+60X| 100GB | 09:50:43 |30 | 20|
+90X| 100GB | 13:25:08 |40 | 20|
 
 ##### Running Step 2 for WGS on a single node with large memory
 Coverage| Memory| Time for WGS on a single node  | --num_threads | --num_threads_spades|
  ---| --- | --- | ---|---|
-60X| 100GB | 2-12:00:00 |30 | 10|
-90X| 100GB | 2-12:00:00 |30 | 10|
+60X| 100GB | 3-12:16:27 |40 | 20|
+90X| 100GB | 4-15:00:00 |40 | 20|
  
 
 
