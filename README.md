@@ -39,7 +39,9 @@ Aquila/bin/Aquila_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freeba
 #####  --uniq_map_dir: "Aquila/Uniqness_map" is the uniqness file you can download by "./install.sh".
 
 #### *Optional parameters
-#####  --out_dir, default = ./Asssembly_results. You can define your own folder, for example "Assembly_results_S12878". 
+##### --mbq_threshold, default = 13, It's phred-scaled quality score for the assertion made in ALT.
+##### --boundary: default = 50000 (50kb), It is the boundary for long fragments with the same barcode. 
+##### --out_dir, default = ./Asssembly_results. You can define your own folder, for example "Assembly_results_S12878". 
 
 ##### --block_threshold, default = 200000 (200kb)
  
