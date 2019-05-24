@@ -47,7 +47,8 @@ Aquila/bin/Aquila_phasing_all_variants.py --assembly_vcf Variants_results_S12878
 #####  --block_len_use, default = 100000, it is the same "--block_len_use" used in assembly steps. 
 
 #### *Final Output
-##### "Aquila_all_phased_sorted.vcf"
+##### "Aquila_all_phased_sorted.vcf". 
+It includes a set of phased SNPs (FreeBayes VCF format, these SNPs are overlapped with a subset of assembled SNPs), a subset of assembled SNPs (these SNPs are unique from assembly), a set of assembled indels and SVs.   
 
 #### Memory/Time Usage
 | Memory | Time for WGS |
