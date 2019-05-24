@@ -1,7 +1,7 @@
 # :milky_way: Aquila :eagle: 
 
 
-## Download:
+## Download Aquila v1.1:
 ```
 git clone https://github.com/maiziex/Aquila.git
 ```
