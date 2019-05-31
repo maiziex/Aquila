@@ -7,7 +7,7 @@ script_path = os.path.dirname(os.path.abspath( __file__ ))
 code_path = script_path + "/" 
 __author__ = "Xin Zhou@Stanford"
 parser = ArgumentParser(description="sort bam by qname:")
-parser.add_argument('--bam_file','-b', help="Required parameter, BAM file, called by \"longranger aling\"",required=True)
+parser.add_argument('--bam_file','-b', help="Required parameter, BAM file, called by \"longranger align\"",required=True)
 parser.add_argument('--out_dir','-o', help="Directory to store assembly results, default =
                         ./Assembly_results",default="./Asssembly_results")
 parser.add_argument('--num_threads_for_samtools_sort','-t',type=int, help="The number of threads you can define for samtools sort",default=20)
