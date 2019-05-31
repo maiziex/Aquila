@@ -12,6 +12,7 @@ Aquila/bin/Aquilla_assembly_based_variants_call.py --assembly_dir Assembly_resul
 ##### --ref_file: "Aquila/source/ref.fa" is the reference fasta file from GRCh38.
 
 #### *Optional parameters
+##### var_size: cut off size for indel and SV, default = 1. 
 #####  --num_of_threads, default = 1. To increase "--num_of_threads", large memory is needed (see the below Memory/Time Usage table). Maximum is 23 which corresponds to the number of chromosomes.  
 #####  --out_dir, default = ./Variants_results
 
