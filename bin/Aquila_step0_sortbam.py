@@ -10,7 +10,7 @@ parser = ArgumentParser(description="sort bam by qname:")
 parser.add_argument('--bam_file','-b', help="Required parameter, BAM file, called by \"longranger align\"",required=True)
 parser.add_argument('--out_dir','-o', help="Directory to store assembly results, default =
                         ./Assembly_results",default="./Asssembly_results")
-parser.add_argument('--num_threads_for_samtools_sort','-t',type=int, help="The number of threads you can define for samtools sort",default=20)
+parser.add_argument('--num_threads_for_samtools_sort','-t',type=int, help="The number of threads you can define for samtools sort, default = 20",default=20)
 args = parser.parse_args()
 
 if __name__ == "__main__":
