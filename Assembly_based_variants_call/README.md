@@ -14,7 +14,7 @@ Aquila/bin/Aquilla_assembly_based_variants_call.py --assembly_dir Assembly_resul
 #### *Optional parameters
 ##### var_size: cut off size for indel and SV, default = 1. 
 #####  --num_of_threads, default = 1. To increase "--num_of_threads", large memory is needed (see the below Memory/Time Usage table). Maximum is 23 which corresponds to the number of chromosomes.  
-#####  --out_dir, default = ./Aquila_Variant_results
+#####  --out_dir, default = ./Aquila_Variant_Results
 
 ##### --chr_start, --chr_end: if you only want to call variants from some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will call variants from chromsomes 1,2,3,4,5. Use "--chr_start 2 --chr_end 2" will only call variants from chromosome 2. 
 
