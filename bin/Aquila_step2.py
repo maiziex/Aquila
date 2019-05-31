@@ -14,7 +14,7 @@ parser = ArgumentParser(description="Author: xzhou15@cs.stanford.edu\n",usage='u
 parser.add_argument('--chr_start','-start',type=int,help="chromosome start from, default = 1", default=1)
 parser.add_argument('--chr_end','-end',type=int,help="chromosome end by, default = 23", default=23)
 parser.add_argument('--out_dir','-o', help="Required parameter; Directory to store assembly results",required=True)
-parser.add_argument('--reference','-ref', help="Required parameter; reference fasta file, run ./install to download \"source/ref.fa\" for hg38",required=True)
+parser.add_argument('--reference','-ref', help="Required parameter; reference fasta file, run ./install to download \"source/ref.fa\" for GRCh38",required=True)
 parser.add_argument('--num_threads','-t',type=int,help="number of threads, default = 30, this correponds to number of small files get assembled simulateoulsy", default=30)
 parser.add_argument('--num_threads_spades','-t_spades',type=int,help="number of threads for spades, default = 5", default=5)
 parser.add_argument('--block_len_use','-bl',type=int,help="phase block len threshold, default = 100000",default=100000)
