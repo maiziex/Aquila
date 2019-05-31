@@ -18,7 +18,7 @@ Aquila/bin/Aquilla_assembly_based_variants_call.py --assembly_dir Assembly_resul
 ##### --chr_start, --chr_end: if you only want to call variants from some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will call variants from chromsomes 1,2,3,4,5. Use "--chr_start 2 --chr_end 2" will only call variants from chromosome 2. 
 
 #### *Final Output
-##### "Aquila_final_sorted.vcf"
+##### "Aquila_final_sorted.vcf": it includes SNPs, indels, and SVs. 
 
 #### Memory/Time Usage
 | Memory| --num_of_threads | Time for WGS |
@@ -48,7 +48,7 @@ Aquila/bin/Aquila_phasing_all_variants.py --assembly_vcf Variants_results_S12878
 
 #### *Final Output
 ##### "Aquila_all_phased_sorted.vcf". 
-It includes a set of phased SNPs (FreeBayes VCF format, these SNPs are overlapped with a subset of assembled SNPs), a subset of assembled SNPs (these SNPs are unique from assembly), a set of assembled indels and SVs.   
+It includes phased SNPs, indels, SVs, all homozygous variants, and a small set of unphased variants. 
 
 #### Memory/Time Usage
 | Memory | Time for WGS |
