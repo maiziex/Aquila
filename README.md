@@ -36,7 +36,7 @@ Aquila/bin/Aquila_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freeba
 
 #####  --sample_name: "S12878" are the sample name you can define. 
 
-#####  --uniq_map_dir: "Aquila/Uniqness_map" is the uniqness file for hg38 you can download by "./install.sh".
+#####  --uniq_map_dir: "Aquila/Uniqness_map" is the uniqness file for GRCh38 you can download by "./install.sh".
 
 #### *Optional parameters
 ##### --mbq_threshold, default = 13, It's phred-scaled quality score for the assertion made in ALT.
