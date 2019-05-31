@@ -182,3 +182,4 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_merged --num_threads 30 --
 
 ## Cite the Paper:
 #### Aquila: diploid personal genome assembly based on linked-reads enabling comprehensive variant detection
+##### bioRxiv Link
