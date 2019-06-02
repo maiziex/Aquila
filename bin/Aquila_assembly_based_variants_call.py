@@ -256,7 +256,7 @@ if __name__ == "__main__":
         chr_end = args.chr_end
         v_size = args.var_size
         num_of_threads = args.num_of_threads
-        in_dir = args.assembly_dir + "/" + "Assembly_Contigs_files_Aquila/"  #   need to change
+        in_dir = args.assembly_dir + "/" + "Assembly_Contigs_files/"  
         ref_file = args.ref_file
         Split_haplotype(chr_start,chr_end,in_dir)
         assembly_based_variants_call_paf(chr_start,chr_end,ref_file)
