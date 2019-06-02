@@ -36,5 +36,5 @@ if __name__ == "__main__":
             sort_bam_cmd = code_path + "samtools/" + "samtools sort -@ " + str(num_threads) + " -n " + bam_file + " -o " + bam_sorted_file
 
         Popen(sort_bam_cmd,shell=True).wait()
-        idx_bam_cmd = "touch "  + out_dir + "finish_bam.txt"
+        idx_bam_cmd = "touch "  + out_dir + "/sorted_bam/finish_bam.txt"
         Popen(idx_bam_cmd,shell=True).wait()
