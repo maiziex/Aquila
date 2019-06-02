@@ -65,8 +65,8 @@ def Extract_SV_info(hap_SV_file,output_file,chr_num,v_size):
         len_var = abs(len(ref)-len(alt))
         #if len_var >= 50 or (alt == "-" and len_var == 49) or (ref == "-" and len_var == 49):
         #if len_var >= 1 or (alt == "-" and len_var == 0) or (ref == "-" and len_var == 0):
-        if len_var >= v_size or (alt == "-" and len_var == v_size -1 ) or (ref == "-" and len_var == v_size - 1):
-        #if (ref == "-" and len(alt) >= v_size) or (alt == "-" and len(ref) >= v_size):
+        #if len_var >= v_size or (alt == "-" and len_var == v_size -1 ) or (ref == "-" and len_var == v_size - 1):
+        if (ref == "-" and len(alt) >= v_size) or (alt == "-" and len(ref) >= v_size):
             SV_dict[key] = val
         
     pickle.dump(SV_dict, open(output_file,"wb"))
