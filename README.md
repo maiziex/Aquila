@@ -194,5 +194,5 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_merged --num_threads 30 --
 ##### bioRxiv Link
 
 ## Troubleshooting:
-##### Please submit issues on the github page for <a href="">Aquila</a>.
+##### Please submit issues on the github page for <a href="https://github.com/maiziex/Aquila/issues">Aquila</a>.
 
