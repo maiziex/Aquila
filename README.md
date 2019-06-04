@@ -133,7 +133,7 @@ wget http://xinzhouneuroscience.org/wp-content/uploads/2019/06/Uniqness_map_hg19
 ##### If you want to run Aquila for other diploid species, to generate "Uniqness_map" for Aquila, check the details of  <a href="https://support.10xgenomics.com/genome-exome/software/downloads/latest">hoffmanMappability</a> to get the corresponding "k100.umap.bed.gz", then run "Aquila/bin/Get_uniqnessmap_for_Aquila.py" to get the final "Uniqness_map" folder to run Aquila.
 
 ## Assembly Based Variants Calling and Phasing:
-##### For example, you can use "Assemlby_results_S12878" as input directory to generate a VCF file which includes SNPs, small Indels and SVs, and the phased profile of all them. 
+##### For example, you can use "Assemlby_results_S12878" as input directory to generate a VCF file which includes SNPs, small Indels and SVs, and the phased profile of all of them. 
 ##### Please check check <a href="https://github.com/maiziex/Aquila/blob/master/Assembly_based_variants_call/README.md/">Assembly_based_variants_call_and_phasing</a> for details. 
 
 
