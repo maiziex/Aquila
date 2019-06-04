@@ -189,8 +189,8 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_merged --num_threads 30 --
 ##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. 
 
 
-## Cite the Paper:
-#### Aquila: diploid personal genome assembly based on linked-reads enabling comprehensive variant detection
+## Cite Aquila:
+#### Aquila: diploid personal genome assembly based on linked-reads enabling comprehensive variant detection.
 ##### bioRxiv Link
 
 ## Troubleshooting:
