@@ -49,7 +49,7 @@ if __name__ == "__main__":
         for chr_num in range(chr_start,chr_end + 1):
             uniq_file = out_dir +  "chr" + str(chr_num) + "_uniq.bed"
             if chr_num == 23:
-                run_cmd = "zcat " + umap_bed_gz + "| grep -w chrX" + str(chr_num) + " > " + uniq_file
+                run_cmd = "zcat " + umap_bed_gz + "| grep -w \"chrX\""  + " > " + uniq_file
             else:
                 run_cmd = "zcat " + umap_bed_gz + "| grep -w \"chr\"" + str(chr_num) + " > " + uniq_file
             Popen(run_cmd,shell=True).wait()
