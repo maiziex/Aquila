@@ -128,6 +128,12 @@ Aquila outputs an overall contig file “Aquila_Contig_chr*.fasta” for each ch
 ##### For example, you can use "Assemlby_results_S12878" as input directory to generate a VCF file which includes SNPs, small Indels and SVs, and the phased profile of all them. 
 ##### Please check check <a href="https://github.com/maiziex/Aquila/blob/master/Assembly_based_variants_call/README.md/">Assembly_based_variants_call_and_phasing</a> for details. 
 
+# Aquila assembly for human hg19:
+##### 1. download hg19 reference from <a href="https://support.10xgenomics.com/genome-exome/software/downloads/latest">10x Genomics website</a>
+##### 2. download hg19 Uniqness_map files by wget using the link
+```
+wget 
+```
 
 # Assembly for multiple libraries:
 
