@@ -11,7 +11,7 @@ import operator
 from scipy.special import comb
 import glob
 from subprocess import Popen
-import glob
+
 
 
 def split_h5(h5_file,chr_num,output_dir):
