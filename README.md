@@ -7,7 +7,7 @@ git clone https://github.com/maiziex/Aquila.git
 ```
 
 ## Dependencies:
-Aquila utilizes <a href="https://www.python.org/downloads/">Python3</a>, <a href="http://samtools.sourceforge.net/">SAMtools</a>, <a href="https://github.com/lh3/minimap2">minimap2</a>, numpy, pysam, and scipy. To be able to execute the above programs by typing their name on the command line, the program executables must be in one of the directories listed in the PATH environment variable (".bashrc"). <br />
+Aquila utilizes <a href="https://www.python.org/downloads/">Python3 (+ numpy, pysam, and scipy)</a>, <a href="http://samtools.sourceforge.net/">SAMtools</a>, and <a href="https://github.com/lh3/minimap2">minimap2</a>. To be able to execute the above programs by typing their name on the command line, the program executables must be in one of the directories listed in the PATH environment variable (".bashrc"). <br />
 Or you could just run "./install.sh" to check their availability and install them if not, but make sure you have installed "python3", "conda" and "wget" first. 
 
 ## Install:
