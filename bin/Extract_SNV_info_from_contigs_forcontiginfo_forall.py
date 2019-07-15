@@ -3,9 +3,6 @@ import pdb
 from collections import defaultdict
 import pickle
 import numpy as np
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
 from argparse import ArgumentParser
 import os
 import sys
