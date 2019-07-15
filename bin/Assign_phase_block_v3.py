@@ -1,5 +1,4 @@
 import pickle
-from sortedcontainers import SortedDict
 from collections import defaultdict
 import numpy as np
 
