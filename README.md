@@ -135,7 +135,7 @@ Aquila outputs an overall contig file “Aquila_Contig_chr*.fasta” for each ch
 wget http://xinzhouneuroscience.org/wp-content/uploads/2019/06/Uniqness_map_hg19.tar.gz 
 ```
 ##### If you want to run Aquila for other diploid species, to generate "Uniqness_map" for Aquila, check the details of  <a href="https://bismap.hoffmanlab.org/">hoffmanMappability</a> to get the corresponding "k100.umap.bed.gz", then run "Aquila/bin/Get_uniqnessmap_for_Aquila.py" to get the final "Uniqness_map" folder to run Aquila.
-##### Or you can use our "Aquila_uniqmap" to generate the "Uniqness_map" folder to run Aquila, check here. 
+##### Or you can use our "Aquila_uniqmap" to generate the "Uniqness_map" folder to run Aquila, check <a href="https://github.com/maiziex/Aquila/blob/master/src/How_to_get_uniqmap_folder.md">How_to_get_Umap</a> for details.
 
 # Assembly for multiple libraries:
 
