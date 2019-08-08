@@ -55,7 +55,7 @@ Aquila/bin/Aquila_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freeba
 
 To use the above option "--chr_start, --chr_end", it is recommended to run the below command first to save more time later. 
 ```
-python Aquila/bin/Aquila_step0_sortbam.py --bam_file possorted_bam.bam --out_dir Results_S12878 --num_threads_for_bwa_mem 20 
+python Aquila/bin/Aquila_step0_sortbam.py --bam_file possorted_bam.bam --out_dir Assembly_results_S12878 --num_threads_for_bwa_mem 20 
 ```
 <!--   -->
 #### Memory/Time Usage For Step 1
