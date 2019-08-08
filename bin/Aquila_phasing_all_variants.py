@@ -629,7 +629,7 @@ if __name__ == "__main__":
         final_vcf = out_dir + "Aquila_phased_sorted.vcf"
         cat_cmd = "cat "+ header_file + " " + sorted_vcf_1 + " > " + final_vcf
         Popen(cat_cmd,shell=True).wait()
-        CleanData(out_dir)
+        #CleanData(out_dir)
         
 
         
