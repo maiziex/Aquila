@@ -266,6 +266,6 @@ if __name__ == "__main__":
         Call_SV_del_from_contigs(chr_start,chr_end,out_dir,num_of_threads,v_size)
         Call_SV_ins_from_contigs(chr_start,chr_end,out_dir,num_of_threads,v_size)
         Merge_all_variants(out_dir)
-        Clean_data(out_dir)
+        #Clean_data(out_dir)
 
 
