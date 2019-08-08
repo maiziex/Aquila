@@ -188,8 +188,8 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_merged --num_threads 30 --
 ##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. 
 
 
-## Cite Aquila_stLFR:
-#### Aquila_stLFR: human haplotype-resolved assembly and variant detection package for single tube long fragment read sequencing
+## Cite Aquila:
+#### Aquila: diploid personal genome assembly and comprehensive variant detection based on linked-reads
 ##### <a href="https://www.biorxiv.org/content/10.1101/660605v1">bioRxiv link</a>
 
 
