@@ -155,7 +155,7 @@ def Refine_phase_block_for_output(uniq_flag,convert_dict,phase_block,h5_file,het
     phase_block_eval = []
     # use the uniq_flag for overlap variants
     # for the final phase blocks, refine some overlap variants when maximize the haplotype likelihood of all molecules 
-    chr_num_raw = h5_file.split("chr")[1].split("_")[0]
+    chr_num_raw = h5_file.split("/chr")[1].split("_")[0]
     if chr_num_raw == "23":
         chr_num = "X"
     else:
