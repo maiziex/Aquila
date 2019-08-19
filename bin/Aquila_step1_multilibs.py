@@ -114,7 +114,7 @@ if __name__ == "__main__":
         block_threshold = args.block_threshold
         uniq_map_dir = args.uniq_map_dir + "/"
         num_threads = args.num_threads
-        num_threads_for_bwa_mem = args.num_threads_for_bwa_mem
+        num_threads_for_samtools_sort = args.num_threads_for_samtools_sort
         HighConf_file_dir = args.out_dir + "/HighConf_file/"
         phased_file_dir = args.out_dir + "/results_phased_probmodel/"
         phase_blocks_cut_highconf_dir = args.out_dir + "/phase_blocks_cut_highconf/"
