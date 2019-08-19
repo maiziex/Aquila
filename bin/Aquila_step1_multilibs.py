@@ -224,7 +224,7 @@ if __name__ == "__main__":
             sample_name = sample_list[_num]
             Raw_fastqs_dir_sample = args.out_dir + "/Raw_fastqs_" + sample_name + "/"
             Bam_dir_sample = args.out_dir + "/sorted_bam_" + sample_name + "/"
-            pool.apply_async(Get_fastq_files_total,(bam_file,chr_start,chr_end,num_threads_for_bwa_mem,Raw_fastqs_dir_sample,Bam_dir_sample,"xin"))
+            pool.apply_async(Get_fastq_files_total,(bam_file,chr_start,chr_end,num_threads_for_samtools_sort,Raw_fastqs_dir_sample,Bam_dir_sample,"xin"))
             _num += 1
         pool.close()
         while len(active_children()) > 1:
