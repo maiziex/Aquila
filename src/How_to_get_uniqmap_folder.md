@@ -14,7 +14,7 @@ mapq_thres = 20                     #MAPQ filter threshold (20 recommended)
 bowtie_thread = 20                  #The number of parallel search threads bowtie2 would use 
 #============================================================================================
 ```
-Before running Aquila_Umap, make sure you have already installed <a href="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml">Bowtie2</a> and other Aquila dependencies. 
+Before running Aquila_Umap, make sure you have already installed <a href="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml">Bowtie2</a> and other Aquila dependencies (samtools, python3(+pysam)). 
 
 NOTICE: Some of the files (especially fastq and sam files) generated during the process would take up a lot of storage (approximately 5~80G each, depending on the size of the chromosome). Although the script will remove them, be sure your disk has enough space remained. 300G avaliable storage is recommended for running on 23 Human chromosomes.
 
