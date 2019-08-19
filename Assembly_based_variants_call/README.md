@@ -18,8 +18,11 @@ Aquila/bin/Aquila_assembly_based_variants_call.py --assembly_dir Assembly_result
 
 ##### --chr_start, --chr_end: if you only want to call variants from some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will call variants from chromsomes 1,2,3,4,5. Use "--chr_start 2 --chr_end 2" will only call variants from chromosome 2. 
 
+##### --all_regions_flag, default = 0 (variants calling in diploid assemblies). For compound SVs, we only randomly select one alternate alleles for the "ALT" field of VCF file. 
+Use "--all_regions_flag 1" for variants calling in all regions. For compound SVs, we split one compound SV into two heterozygous SVs. You can process compound SVs by your own definition. 
+
 #### *Final Output
-##### "Aquila_final_sorted.vcf": it includes SNPs, indels, and SVs. 
+##### "Aquila_final_sorted.vcf": it includes SNPs, indels, and SVs. (This the coordinate of this VCF file starts from 0)
 
 #### Memory/Time Usage
 | Memory| --num_of_threads | Time for WGS |
@@ -49,7 +52,7 @@ Aquila/bin/Aquila_phasing_all_variants.py --assembly_vcf Variants_results_S12878
 
 #### *Final Output
 ##### "Aquila_all_phased_sorted.vcf". 
-It includes phased SNPs, indels, SVs, all homozygous variants, and a small set of unphased variants. 
+It includes phased SNPs, indels, SVs, all homozygous variants, and a small set of unphased variants. (This the coordinate of this VCF file starts from 1)
 
 #### Memory/Time Usage
 | Memory | Time for WGS |
