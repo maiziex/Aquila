@@ -13,7 +13,7 @@ parser = ArgumentParser(description="sort bam by qname:")
 parser.add_argument('--bam_file_list','-bam',help="Required Parameter, BAM file list, each BAM file is seperately by comma \",\". For example: 1.bam,2.bam",required=True)
 parser.add_argument('--out_dir','-o', help="Directory to store Aquila assembly results, default =./Assembly_results", default="./Asssembly_results")
 parser.add_argument('--sample_name_list','-sl', help='Required Parameter, The sample names list, each sample name is seperately by comma ",". For example: S24385_lysis_2,S24385_lysis_2H', type=str,required=True)
-parser.add_argument('--num_threads_for_bwa_mem','-t',type=int, help=" The number of threads you can define for bwa-mem, default = 20",default=20)
+parser.add_argument('--num_threads_for_samtools_sort','-t',type=int, help=" The number of threads you can define for samtools sort, default = 20",default=20)
 args = parser.parse_args()
 
 def sort_start(sort_bam_cmd,idx_bam_cmd,xin):
@@ -28,7 +28,7 @@ if __name__ == "__main__":
         sample_list = [item for item in args.sample_name_list.split(',')]
         bam_list = [item for item in args.bam_file_list.split(',')]
         out_dir = args.out_dir
-        num_threads = int(args.num_threads_for_bwa_mem)
+        num_threads = int(args.num_threads_for_samtools_sort)
         if os.path.exists(out_dir):
             print("using existing output folder: " + out_dir)
         else:
