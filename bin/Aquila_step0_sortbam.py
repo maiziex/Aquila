@@ -9,7 +9,7 @@ __author__ = "Xin Zhou@Stanford"
 parser = ArgumentParser(description="sort bam by qname:")
 parser.add_argument('--bam_file','-b', help="Required parameter, BAM file, called by \"longranger align\"",required=True)
 parser.add_argument('--out_dir','-o', help="Directory to store Aquila assembly results, default = ./Assembly_results", default="./Asssembly_results")
-parser.add_argument('--num_threads_for_bwa_mem','-t',type=int, help="The number of threads you can define for bwa-mem, default = 20",default=20)
+parser.add_argument('--num_threads_for_samtools_sort','-t',type=int, help="The number of threads you can define for samtools sort, default = 20",default=20)
 args = parser.parse_args()
 
 if __name__ == "__main__":
@@ -18,7 +18,7 @@ if __name__ == "__main__":
     else:
         bam_file = args.bam_file
         out_dir = args.out_dir
-        num_threads = int(args.num_threads_for_bwa_mem)
+        num_threads = int(args.num_threads_for_samtools_sort)
         if os.path.exists(out_dir):
             print("using existing output folder: " + out_dir)
         else:
