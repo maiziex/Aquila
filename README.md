@@ -49,7 +49,7 @@ Aquila/bin/Aquila_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freeba
 
 ##### --num_threads, default = 8. It's recommended not to change this setting unless large memory node could be used (2*memory capacity(it suggests for assembly below)), then try to use "--num_threads 12". 
 
-##### --num_threads_for_bwa_mem, default = 20. This setting is evoked for "bwa mem".
+##### --num_threads_for_samtools_sort, default = 20. This setting is evoked for "samtools sort".
 
 ##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will assemble chromsomes 1,2,3,4,5. Use "--chr_start 2 --chr_end 2" will only assemlby chromosome 2. (*Notes: Use 23 for "chrX")
 
@@ -162,7 +162,7 @@ Aquila/bin/Aquila_step1_multilibs.py --bam_file_list ./S24385_Lysis_2/Longranger
 
 ##### --num_threads, default = 8. It's recommended not to change this setting unless large memory node could be used (2*memory capacity(it suggests for assembly below)), then try to use "--num_threads 12". 
 
-##### --num_threads_for_bwa_mem, default = 20. This setting is evoked for "bwa mem".
+##### --num_threads_for_samtools_sort, default = 20. This setting is evoked for "samtools sort".
 
 
 ##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will assemble chromsomes 1,2,3,4,5. Use "--chr_start 2 --chr_end 2" will only assemlby chromosome 2. (*Notes: Use 23 for "chrX")
