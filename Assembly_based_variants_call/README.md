@@ -8,7 +8,7 @@ Or use the fullpath of "**Aquila_assembly_based_variants_call.py**" and "**Aquil
 Aquila/bin/Aquila_assembly_based_variants_call.py --assembly_dir Assembly_results_S12878 --out_dir Variants_results_S12878 --ref_file Aquila/source/ref.fa 
 ```
 #### *Required parameters
-##### --assembly_dir: "Assembly_results_S12878" is the output folder from Aquila assembly steps. (Here, Aquila will use contig files from "Assembly_results_S12878/Assembly_Contigs_files" to perform variant calling.) 
+##### --assembly_dir: "Assembly_results_S12878" is the output folder from Aquila assembly steps. (Here, Aquila will use contig files from "Assembly_results_S12878/Assembly_Contigs_files" to perform variants calling.) 
 ##### --ref_file: "Aquila/source/ref.fa" is the reference fasta file from GRCh38, you can download it by running "./install.sh"
 
 #### *Optional parameters
@@ -22,7 +22,7 @@ Aquila/bin/Aquila_assembly_based_variants_call.py --assembly_dir Assembly_result
 Use "--all_regions_flag 1" for variants calling in all regions. For compound SVs, we split one compound SV into two heterozygous SVs. You can process compound SVs by your own definition based on the coordinates from the final VCF file. 
 
 #### *Final Output
-##### "Aquila_final_sorted.vcf": it includes SNPs, indels, and SVs. (This the coordinate of this VCF file starts from 0)
+##### "Aquila_final_sorted.vcf": it includes SNPs, indels, and SVs. (This coordinate of this VCF file starts from 0)
 
 #### Memory/Time Usage
 | Memory| --num_of_threads | Time for WGS |
@@ -52,7 +52,7 @@ Aquila/bin/Aquila_phasing_all_variants.py --assembly_vcf Variants_results_S12878
 
 #### *Final Output
 ##### "Aquila_all_phased_sorted.vcf". 
-It includes phased SNPs, indels, SVs, all homozygous variants, and a small set of unphased variants. (This the coordinate of this VCF file starts from 1)
+It includes phased SNPs, indels, SVs, all homozygous variants, and a small set of unphased variants. (This coordinate of this VCF file starts from 1)
 
 #### Memory/Time Usage
 | Memory | Time for WGS |
