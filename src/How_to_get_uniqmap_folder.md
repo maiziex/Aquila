@@ -1,6 +1,6 @@
 The below pipeline to generate K100 Umap is implemented based on <a href="https://bismap.hoffmanlab.org/">hoffmanMappability</a>.  
 Credit by Yichen Liu (liuyichen@std.uestc.edu.cn)
-1. Use Jupyter notebook "Aquila_Umap.ipynb"    :octocat: <br />
+1. Use Jupyter notebook "Aquila/bin/Aquila_Umap.ipynb"    :octocat: <br />
 Configure the second block in Aquila_Umap.ipynb to meet your requirements, then run the whole notebook.
 ```
 #============================================================================================
