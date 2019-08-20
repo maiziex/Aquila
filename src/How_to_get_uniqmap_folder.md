@@ -1,6 +1,8 @@
 The below pipeline to generate K100 Umap is implemented based on <a href="https://bismap.hoffmanlab.org/">hoffmanMappability</a>.  
 Credit by Yichen Liu (liuyichen@std.uestc.edu.cn)
-1. Use Jupyter notebook "Aquila/bin/Aquila_Umap.ipynb"    :octocat: <br />
+
+### 1. Use Jupyter notebook "<a href="https://github.com/maiziex/Aquila/blob/master/bin/Aquila_Umap.ipynb">Aquila/bin/Aquila_Umap.ipynb</a>"    :octocat: <br />
+
 Configure the second block in Aquila_Umap.ipynb to meet your requirements, then run the whole notebook.
 ```
 #============================================================================================
@@ -16,8 +18,44 @@ bowtie_thread = 20                  #The number of parallel search threads bowti
 ```
 Before running Aquila_Umap, make sure you have already installed <a href="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml">Bowtie2</a> and other Aquila dependencies (samtools, python3(+pysam)). 
 
-NOTICE: Some of the intermediate files (especially fastq and sam files) generated during the process would take up a lot of storage (approximately 5~80G each, depending on the size of the chromosome). Although the script will remove them, be sure your disk has enough space remained. 300G avaliable storage is recommended for running on 23 Human chromosomes.
 
-For testing, give start and end same chromosome number to only process one chromosome (Human chromosome 21 is recommended).
+#### A practical example
 
-2. Use "Aquila_Umap.py" :octocat: <br />
+Download Rhesus macaque (Macaca mulatta) genome fasta file from  <a href="http://xxxx.com">HERE</a>.
+
+Your folder structure should be as follows :
+```
+Rhesus_macaque
+    |-fasta
+        |-macaca_mulatta.fa
+```
+"macaca_mulatta.fa" is the fasta file you have just downloaded.
+
+Then edit the second block and run the whole notebook.
+```
+fa_folder = "path/to/Rhesus_macaque/fasta/"
+fa_name = "macaca_mulatta.fa"
+out_dir = "path/to/Rhesus_macaque/output/"
+start = (your start chromosome)
+end = (your end chromosome)
+kmer_len = 100 
+mapq_thres = 20
+bowtie_thread = 20 
+```
+
+When finished, you will get: 
+```
+Rhesus_macaque
+|-fasta
+|   |-macaca_mulatta.fa
+|
+|-output
+    |-Uniqness_map
+        |-uniq_map_chrxxx.p
+        |-uniq_map_chrxxx.p
+        |-uniq_map_chrxxx.p
+        ...
+```
+The final results are stored in Uniqness_map folder.
+
+### 2. Use "Aquila_Umap.py" :octocat: <br />
