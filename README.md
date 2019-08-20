@@ -59,7 +59,7 @@ python Aquila/bin/Aquila_step0_sortbam.py --bam_file possorted_bam.bam --out_dir
 ```
 <!--   -->
 #### Memory/Time Usage For Step 1
-##### Running Step 1 for chromosomes parallelly on multiple(23) nodes
+##### Running Step 1 for chromosomes parallelly on multiple(23) nodes, you can check multiple_nodes.sh
 
 Coverage | Memory| Time for chr1 on a single node | 
 --- | --- | --- | 
