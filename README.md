@@ -115,35 +115,36 @@ Coverage| Memory| Time for WGS on a single node  | --num_threads | --num_threads
 Assembly_results_S12878
 |
 |-H5_for_molecules 
-|   └-S12878_chr*_sorted.h5    --> (Fragment files for each chromosome including barcode, variants, coordinates for each fragment)
+|   └-S12878_chr*_sorted.h5    --> (Fragment files for each chromosome including barcode, variants annotation (0: ref allele; 1: alt allele), coordinates for each fragment)
 |
 |-HighConf_file
-|   └-chr*_global_track.p
+|   └-chr*_global_track.p      --> (Pickle file saving coordinates of high-confidence boundary points)
 |
 |-results_phased_probmodel
-|   └-chr*.phased_final
+|   └-chr*.phased_final        --> (Phased fragment files)
 |
 |-phase_blocks_cut_highconf
 |
 |-sorted_bam
-|   |-finish_bam.txt
-|   └-sorted_bam.bam
+|   |-finish_bam.txt           --> (generated once "sorted_bam.bam" is completed)
+|   └-sorted_bam.bam           --> (bam file by sorting with the read name)
 |
 |-Raw_fastqs
-|   └-fastq_by_Chr_*
+|   └-fastq_by_Chr_*           --> (fastq file for each chromosome)
 |
 |-ref_dir
 |
 |-Local_Assembly_by_chunks
 |   └-chr*_files_cutPBHC
-|       |-fastq_by_*_*_hp1.fastq
-|       |-fastq_by_*_*_hp2.fastq
-|       |-fastq_by_*_*_hp1_spades_assembly
-|       └-fastq_by_*_*_hp2_spades_assembly
+|       |-fastq_by_*_*_hp1.fastq                  --> (fastq file for a small phased chunk of haplotype 1)
+|       |-fastq_by_*_*_hp2.fastq                  --> (fastq file for a small phased chunk of haplotype 2)
+|       |-fastq_by_*_*_hp1_spades_assembly        --> (minicontigs: assembly results for the small chunk of haplotype 1) 
+|       └-fastq_by_*_*_hp2_spades_assembly        --> (minicontigs: assembly results for the small chunk of haplotype 2)
 |
 └-Assembly_Contigs_files
-    |-Aquila_Contig_chr*.fasta
-    └-Aquila_contig.fasta 
+    |-Aquila_cutPBHC_minicontig_chr*.fasta        --> (final minicontigs for each chromosome)
+    |-Aquila_Contig_chr*.fasta                    --> (final contigs for each chromosome)
+    └-Aquila_contig.fasta                         --> (final contigs for WGS)
 ```
 
 
