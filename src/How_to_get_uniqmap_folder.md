@@ -21,7 +21,7 @@ Before running Aquila_Umap, make sure you have already installed <a href="http:/
 
 #### A practical example
 
-Download Rhesus macaque (Macaca mulatta) genome fasta file from  <a href="http://xxxx.com">HERE</a>.
+Download Rhesus macaque (Macaca mulatta) genome fasta file from  <a href="wget http://xinzhouneuroscience.org/wp-content/uploads/2019/08/macaca_mulatta.fa">HERE</a>.
 
 Your folder structure should be as follows :
 ```
