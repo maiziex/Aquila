@@ -154,7 +154,7 @@ Aquila outputs an overall contig file “Aquila_Contig_chr*.fasta” for each ch
 
 
 ### Clean Data
-##### If your hard drive storage is limited, it is suggested to quily clean some data by running "Aquila_clean.py" after you get all your contig files in "Assembly_Contigs_files". Or you can keep them for some analysis. 
+##### If your hard drive storage is limited, it is suggested to quily clean some data by running "Aquila_clean.py" after you get all your contig files in "Assembly_Contigs_files". Or you can keep them for some analysis (check the above output directory tree for details). 
 ```
 Aquila/bin/Aquila_clean.py --out_dir Assembly_results_S12878 
 ```
