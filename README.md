@@ -118,7 +118,7 @@ Assembly_results_S12878
 |   └-S12878_chr*_sorted.h5    --> (Fragment files for each chromosome including barcode, variants annotation (0: ref allele; 1: alt allele), coordinates for each fragment)
 |
 |-HighConf_file
-|   └-chr*_global_track.p      --> (Pickle file saving coordinates of high-confidence boundary points)
+|   └-chr*_global_track.p      --> (Pickle file for saving coordinates of high-confidence boundary points)
 |
 |-results_phased_probmodel
 |   └-chr*.phased_final        --> (Phased fragment files)
