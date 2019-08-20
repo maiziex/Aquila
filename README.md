@@ -115,7 +115,7 @@ Coverage| Memory| Time for WGS on a single node  | --num_threads | --num_threads
 Assembly_results_S12878
 |
 |-H5_for_molecules 
-|   └-S12878_chr*_sorted.h5
+|   └-S12878_chr*_sorted.h5    --> (Fragment files for each chromosome including barcode, variants, coordinates for each fragment)
 |
 |-HighConf_file
 |   └-chr*_global_track.p
