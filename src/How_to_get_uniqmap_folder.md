@@ -36,8 +36,8 @@ Then edit the second block and run the whole notebook.
 fa_folder = "path/to/Rhesus_macaque/fasta/"
 fa_name = "macaca_mulatta.fa"
 out_dir = "path/to/Rhesus_macaque/output/"
-start = (your start chromosome)
-end = (your end chromosome)
+start = 1
+end = 21          # 21 correponds to "chrX" for rhesus macaque 
 kmer_len = 100 
 mapq_thres = 20
 bowtie_thread = 20 
