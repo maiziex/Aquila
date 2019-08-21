@@ -59,7 +59,9 @@ Rhesus_macaque
 The final results are stored in Uniqness_map folder.
 
 ### 2. Use "Aquila_Umap.py" :octocat: <br />
+```
 conda install aquila_umap
+````
 (Please ensure <a href="https://bioconda.github.io/user/install.html#set-up-channels">channels</a> are properly setup for bioconda before installing) 
 
 
