@@ -58,7 +58,7 @@ Rhesus_macaque
 ```
 The final results are stored in Uniqness_map folder.
 
-### 2. Use "Aquila_Umap.py" :octocat: <br />
+### 2. Use <a href="https://github.com/maiziex/Aquila_Umap">"Aquila_Umap.py"</a>:octocat: <br />
 ```
 conda install aquila_umap
 ````
