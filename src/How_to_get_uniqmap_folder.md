@@ -60,8 +60,7 @@ The final results are stored in Uniqness_map folder.
 
 ### 2. or Use <a href="https://github.com/maiziex/Aquila_Umap">"Aquila_Umap.py"</a>:octocat: <br />
 [![BioConda Install](https://img.shields.io/conda/dn/bioconda/aquila_umap.svg?style=flag&label=BioConda%20install)](https://anaconda.org/bioconda/aquila_umap)
-```
-```
+
 conda install aquila_umap
 ````
 (Please ensure <a href="https://bioconda.github.io/user/install.html#set-up-channels">channels</a> are properly setup for bioconda before installing) 
