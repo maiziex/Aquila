@@ -27,7 +27,7 @@ parser.add_argument('--boundary','-bound',type=int,help="boundary for long fragm
 args = parser.parse_args()
 
 
-def Get_fragment_files(bam_file,vcf_file,chr_start,chr_end,h5_dir,num_threads,mbq,boundary):
+def Get_fragment_files(bam_file,vcf_file,chr_start,chr_end,h5_dir,num_threads,mbq,boundary,sample_name):
     use_cmd = "python3 " + code_path + "Run_h5_all_multithreads.py" + " --bam_file " + bam_file + " --vcf_file " + vcf_file + " --sample_name " + sample_name + " --chr_start " + str(chr_start) + " --chr_end " + str(chr_end) + " --mbq " + str(mbq) + "  --mmq 0  --boundary " + str(boundary) + " --num_threads " + str(num_threads) + " --out_dir " + h5_dir
     Popen(use_cmd,shell=True).wait()
 
@@ -84,7 +84,7 @@ if __name__ == "__main__":
         Sorted_bam_dir = args.out_dir + "/sorted_bam/"
         Local_Assembly_dir = args.out_dir + "/Local_Assembly_by_chunks/"
         
-        Get_fragment_files(bam_file,vcf_file,chr_start,chr_end,h5_dir,num_threads,mbq,boundary)
+        Get_fragment_files(bam_file,vcf_file,chr_start,chr_end,h5_dir,num_threads,mbq,boundary,sample_name)
         Get_highconf_profile(bam_file,chr_start,chr_end,HighConf_file_dir,uniq_map_dir)
         Haplotying_fragments(chr_start,chr_end,phased_file_dir,h5_dir,sample_name)
         Cut_phase_blocks(chr_start,chr_end,block_threshold,block_len_use,phase_blocks_cut_highconf_dir,phased_file_dir,HighConf_file_dir)
