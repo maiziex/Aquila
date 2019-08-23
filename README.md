@@ -134,7 +134,7 @@ Assembly_results_S12878
 |
 |-ref_dir
 |
-|-Local_Assembly_by_chunks (Aquila_step2)
+|-Local_Assembly_by_chunks (Aquila_step1 + Aquila_step2)
 |   └-chr*_files_cutPBHC
 |       |-fastq_by_*_*_hp1.fastq                  --> (fastq file for a small phased chunk of haplotype 1)
 |       |-fastq_by_*_*_hp2.fastq                  --> (fastq file for a small phased chunk of haplotype 2)
