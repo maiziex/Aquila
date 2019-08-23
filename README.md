@@ -132,7 +132,7 @@ Assembly_results_S12878
 |-Raw_fastqs (step1)
 |   └-fastq_by_Chr_*           --> (fastq file for each chromosome)
 |
-|-ref_dir
+|-ref_dir (Aquila_step2)
 |
 |-Local_Assembly_by_chunks (Aquila_step1 + Aquila_step2)
 |   └-chr*_files_cutPBHC
