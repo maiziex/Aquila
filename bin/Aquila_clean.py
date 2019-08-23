@@ -45,7 +45,7 @@ def Aquila_clean(in_dir,chr_start,chr_end,num_of_threads):
 
     print("Cleaning local assembly by chunks files done!")
 
-    Raw_fastqs_dir = in_dir + "Raw_fastqs/"
+    Raw_fastqs_dir = in_dir + "Raw_fastqs*/"
     rm_cmd = "rm -rf " + Raw_fastqs_dir
     Popen(rm_cmd,shell=True).wait()
     print("Cleaning Raw_fastqs done!")
