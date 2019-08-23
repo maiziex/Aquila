@@ -125,11 +125,11 @@ Assembly_results_S12878
 |
 |-phase_blocks_cut_highconf (Aquila_step1)
 |
-|-sorted_bam  (step1)
+|-sorted_bam  (Aquila_step1)
 |   |-finish_bam.txt           --> (generated once "sorted_bam.bam" is completed)
 |   └-sorted_bam.bam           --> (bam file by sorting with the read name)
 |
-|-Raw_fastqs (step1)
+|-Raw_fastqs (Aquila_step1)
 |   └-fastq_by_Chr_*           --> (fastq file for each chromosome)
 |
 |-ref_dir (Aquila_step2)
