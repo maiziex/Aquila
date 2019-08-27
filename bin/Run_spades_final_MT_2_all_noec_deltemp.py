@@ -97,7 +97,7 @@ def run_spades_all(chr_start,chr_end,output_dir,num_of_threads,minicontig_dir):
         Concatenate_start(in_dir,minicontig_dir,output_file,"xin")   
         
         # delete assembly files
-        """
+        
         time.sleep(5)
         pool = Pool(num_of_threads)
         count = 1
@@ -116,7 +116,7 @@ def run_spades_all(chr_start,chr_end,output_dir,num_of_threads,minicontig_dir):
                 else:
                     pool = Pool(num_of_threads)
         time.sleep(5)
-        """
+        
     print("All Done~")
 
 
