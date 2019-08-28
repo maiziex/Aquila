@@ -15,7 +15,7 @@ Aquila_assembly_based_variants_call --help
 Aquila_phasing_all_variants --help
 Aquila_step0_sortbam --help
 Aquila_step0_sortbam_multilibs --help
-# You can also check the below corresponding scripts for details
+# You can also check the below corresponding scripts for more details
 ```
 ```
 #Download the reference file (hg38)
