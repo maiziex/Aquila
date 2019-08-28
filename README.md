@@ -1,17 +1,36 @@
 # :milky_way: Aquila :eagle: 
-
-
-## Download Aquila v1.1:
+[![BioConda Install](https://img.shields.io/conda/dn/bioconda/aquila.svg?style=flag&label=BioConda%20install)](https://anaconda.org/bioconda/aquila)
+# Install through Bioconda (The updated version 1.2.10):
 ```
-git clone https://github.com/maiziex/Aquila.git
+conda install aquila
 ```
+(Please ensure <a href="https://bioconda.github.io/user/install.html#set-up-channels">channels</a> are properly setup for bioconda before installing) 
 
-## Dependencies:
-Aquila utilizes <a href="https://www.python.org/downloads/">Python3 (+ numpy, pysam, and scipy)</a>, <a href="http://samtools.sourceforge.net/">SAMtools</a>, and <a href="https://github.com/lh3/minimap2">minimap2</a>. To be able to execute the above programs by typing their name on the command line, the program executables must be in one of the directories listed in the PATH environment variable (".bashrc"). <br />
+```
+Aquila_step1 --help
+Aquila_step2 --help
+Aquila_clean --help
+Aquila_step1_multilibs --help
+Aquila_assembly_based_variants_call --help
+Aquila_phasing_all_variants --help
+Aquila_step0_sortbam --help
+Aquila_step0_sortbam_multilibs --help
+# You can also check the below corresponding scripts for details
+```
+```
+#Download the reference file (hg38)
+wget http://xinzhouneuroscience.org/wp-content/uploads/2019/05/source.tar.gz
+
+#Download hg38 "Uniqness_map"
+wget http://xinzhouneuroscience.org/wp-content/uploads/2019/05/Uniqness_map.tar.gz
+```
+## Dependencies for Github install:
+Aquila_stLFR utilizes <a href="https://www.python.org/downloads/">Python3 (+ numpy, pysam, and scipy)</a>, <a href="http://samtools.sourceforge.net/">SAMtools</a>, and <a href="https://github.com/lh3/minimap2">minimap2</a>. To be able to execute the above programs by typing their name on the command line, the program executables must be in one of the directories listed in the PATH environment variable (".bashrc"). <br />
 Or you could just run "./install.sh" to check their availability and install them if not, but make sure you have installed "python3", "conda" and "wget" first. 
 
-## Install:
+# Install through Github:
 ```
+git clone https://github.com/maiziex/Aquila.git
 cd Aquila
 chmod +x install.sh
 ./install.sh
