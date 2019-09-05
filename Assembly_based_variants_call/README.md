@@ -39,7 +39,7 @@ Use "--all_regions_flag 1" for variants calling in all regions. For compound SVs
 | Memory| --num_of_threads | Time for WGS |
 | --- | --- | --- | 
 | 350GB | 4 | 01:08:14|
-
+| 200GB | 1 | 02:12:44|
 
 # 2. Phasing all types of variants  :eagle:
 
