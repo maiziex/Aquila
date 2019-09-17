@@ -20,6 +20,8 @@ Aquila_step0_sortbam_multilibs --help
 ```
 #Download the reference file (hg38)
 wget http://xinzhouneuroscience.org/wp-content/uploads/2019/05/source.tar.gz
+tar -xvf source.tar.gz
+rm source.tar.gz
 
 #Download hg38 "Uniqness_map"
 wget http://xinzhouneuroscience.org/wp-content/uploads/2019/05/Uniqness_map.tar.gz
