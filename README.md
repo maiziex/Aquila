@@ -72,7 +72,7 @@ Aquila/bin/Aquila_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freeba
 
 ##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will assemble chromsomes 1,2,3,4,5. Use "--chr_start 2 --chr_end 2" will only assemlby chromosome 2. (*Notes: Use 23 for "chrX")
 
-To use the above option "--chr_start, --chr_end", it is recommended(not required) to run the below command first to save more time for step1. 
+To use the above option "--chr_start, --chr_end", it is recommended(not required) to run the below command first to save more time for step1. (This step is recommended if your computing node is not reliable and may break down very often)
 ```
 python Aquila/bin/Aquila_step0_sortbam.py --bam_file possorted_bam.bam --out_dir Assembly_results_S12878 --num_threads_for_samtools_sort 30 
 ```
@@ -173,7 +173,7 @@ Aquila outputs an overall contig file “Aquila_Contig_chr*.fasta” for each ch
 
 
 ### Clean Data
-##### If your hard drive storage is limited, it is suggested to quily clean some data by running "Aquila_clean.py" after you get all your contig files in "Assembly_Contigs_files". Or you can keep them for some analysis (check the above output directory tree for details). 
+##### If your hard drive storage is limited (Aquila will generate a lot of intermediate files by local assembly), it is suggested to quily clean some data by running "Aquila_clean.py" after you get all your contig files in "Assembly_Contigs_files". Or you can keep them for some analysis (check the above output directory tree for details). 
 ```
 Aquila/bin/Aquila_clean.py --assembly_dir Assembly_results_S12878 
 ```
