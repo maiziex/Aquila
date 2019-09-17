@@ -23,6 +23,8 @@ wget http://xinzhouneuroscience.org/wp-content/uploads/2019/05/source.tar.gz
 
 #Download hg38 "Uniqness_map"
 wget http://xinzhouneuroscience.org/wp-content/uploads/2019/05/Uniqness_map.tar.gz
+tar -xvf Uniqness_map.tar.gz
+rm Uniqness_map.tar.gz
 ```
 ## Dependencies through Github install:
 Aquila_stLFR utilizes <a href="https://www.python.org/downloads/">Python3 (+ numpy, pysam, and scipy)</a>, <a href="http://samtools.sourceforge.net/">SAMtools</a>, and <a href="https://github.com/lh3/minimap2">minimap2</a>. To be able to execute the above programs by typing their name on the command line, the program executables must be in one of the directories listed in the PATH environment variable (".bashrc"). <br />
