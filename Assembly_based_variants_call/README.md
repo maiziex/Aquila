@@ -38,7 +38,7 @@ Use "--all_regions_flag 1" for variants calling in all regions. For compound SVs
 | 150GB | 2 |17:35:45 |
 | 250GB | 3 | 13:25:06|
 | 350GB | 4 | 09:58:44|
-| 600GB | 5 | 09:31:08|
+
 
 
 
