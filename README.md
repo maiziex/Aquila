@@ -184,7 +184,7 @@ Aquila/bin/Aquila_clean.py --assembly_dir Assembly_results_S12878
 
 ## Assembly Based Variants Calling and Phasing:
 ##### For example, you can use "Assemlby_results_S12878" as input directory to generate a VCF file which includes SNPs, small Indels and SVs, and the phased profile of all of them. 
-##### Please check check <a href="https://github.com/maiziex/Aquila/blob/master/Assembly_based_variants_call/README.md/">Assembly_based_variants_call_and_phasing</a> for details. 
+##### Please check <a href="https://github.com/maiziex/Aquila/blob/master/Assembly_based_variants_call/README.md/">Assembly_based_variants_call_and_phasing</a> for details. 
 
 ## Aquila assembly for other version of human referece: hg19
 ##### 1. Download hg19 reference from <a href="https://support.10xgenomics.com/genome-exome/software/downloads/latest">10x Genomics website</a>
