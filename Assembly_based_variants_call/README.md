@@ -25,6 +25,8 @@ Use "--all_regions_flag 1" for variants calling in all regions. For compound SVs
 
 #### *Final Output
 ##### "Aquila_final_sorted.vcf": it includes SNPs, indels, and SVs. (This coordinate of this VCF file starts from 0)
+##### To evaluate snp/indel/SVs from "Aquila_final_sorted.vcf" with NIST Gold standard, check <a href="https://github.com/xinzhoucs/Aquila_VCF_Reformat_and_Evaluate">here</a> in details. 
+
 #### Memory/Time Usage for "--all_regions_flag 1" (This mode is used for reporting variants calling in Aquila paper)
 | Memory| --num_of_threads | Time for WGS |
 | --- | --- | --- | 
