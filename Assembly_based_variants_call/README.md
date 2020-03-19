@@ -18,7 +18,7 @@ Aquila/bin/Aquila_assembly_based_variants_call.py --assembly_dir Assembly_result
 
 ##### --chr_start, --chr_end: if you only want to call variants from some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will call variants from chromsomes 1,2,3,4,5. Use "--chr_start 2 --chr_end 2" will only call variants from chromosome 2. 
 
-##### --clean_flag, default = 0 (keep all intermediate files). Use "--all_regions_flag 1" to clean all intermediate files. 
+##### --clean_flag, default = 0 (keep all intermediate files). Use "--clean_flag 1" to clean all intermediate files. 
 
 ##### --all_regions_flag, default = 0 (variants calling only for diploid assemblies). For compound SVs, we randomly select one alternate allele(s) for the "ALT" field of the VCF file. 
 Use "--all_regions_flag 1" for variants calling in all regions. For compound SVs, we split one compound SV into two heterozygous SVs. You can process compound SVs by your own definition based on the coordinates from the final VCF file. 
