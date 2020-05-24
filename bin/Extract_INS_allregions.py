@@ -133,8 +133,7 @@ def compare_two_haploid_SV(SV_dict_contig_1_file, SV_dict_contig_2_file,use_chr_
                 contig_start_1 = val_1[-3]
                 contig_end_1 = val_1[-2]
                 contig_strand_dir_1 = val_1[-1]
-                ins_hetero_sv[key_1] = [val_1[0],start_1,end_1,ref_1,alt_1,'0_PS0:0_hp0',0,0,0,contig_num_1,contig_start_1,contig_end_1,contig_strand_dir_1]
-
+                ins_hetero_sv[key_1] = [val_1[0],start_1,end_1,ref_1,alt_1,contig_num_1,contig_start_1,contig_end_1,contig_strand_dir_1,'0_PS0:0_hp0',0,0,0]
     # processing the uniq in contig_2
     for key_2, val_2 in SV_dict_contig_2.items():
         if homo_key_dict[key_2] == 1:
