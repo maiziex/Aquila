@@ -249,7 +249,7 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_merged --num_threads 30 --
 ## Cite Aquila:
 #### Aquila: diploid personal genome assembly and comprehensive variant detection based on linked-reads
 ##### <a href="https://www.biorxiv.org/content/10.1101/660605v1">bioRxiv link</a>
-#### Aquila can also do hybrid assembly for both 10x and stlfr data for WGS variant calling, please check <a href="https://github.com/maiziex/https://github.com/maiziex/Aquila_stLFR">here</a>
+#### Aquila can also do hybrid assembly for both 10x and stlfr data for WGS variant calling, please check <a href="https://github.com/maiziex/Aquila_stLFR">here</a>
 
 
 ## Troubleshooting:
