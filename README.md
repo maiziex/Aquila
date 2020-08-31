@@ -47,6 +47,8 @@ After running "./install.sh", a folder "source" would be download, it includes h
 Put the "Aquila/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
 Or just use the fullpath of "**Aquila_step1.py**" and "**Aquila_step2.py**"
 
+## Sex chromosomes
+Aquila uses 23 for "chrX", and not able to handle "chrY" in this version.
 
 ### Step 1: 
 ```
