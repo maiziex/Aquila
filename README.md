@@ -58,6 +58,7 @@ Aquila/bin/Aquila_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freeba
 ##### --bam_file: "possorted_bam.bam" is bam file generated from barcode-awere aligner like "Lonranger align". How to get bam file, you can also check <a href="https://github.com/maiziex/Aquila/blob/master/src/How_to_get_bam_and_vcf.md">here</a>.
 
 ##### --vcf_file: "S12878_freebayes.vcf" is VCF file generated from variant caller like "FreeBayes". How to get vcf file, you can also check <a href="https://github.com/maiziex/Aquila/blob/master/src/How_to_get_bam_and_vcf.md">here</a>. 
+*** You can also use 1000 Genomes VCF as the VCF file input, and Aquila will directly use common variants to help partition linked-reads. In the later version, Aquila will use Graph Genome Reference to replace Conventional Linear Reference.  
 
 #####  --sample_name: "S12878" are the sample name you can define. 
 
@@ -252,7 +253,7 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_merged --num_threads 30 --
 #### Aquila: diploid personal genome assembly and comprehensive variant detection based on linked-reads
 ##### <a href="https://www.biorxiv.org/content/10.1101/660605v1">bioRxiv link</a>
 #### Aquila can also do hybrid assembly for both 10X and stLFR linked-reads data and WGS variant calling, please check <a href="https://github.com/maiziex/Aquila_stLFR">here</a>
-#### Aquila for TELL-Seq linked-reads is coming soon!
+#### Tell-Seq works with Aquila out of the box!
 
 
 ## Troubleshooting:
