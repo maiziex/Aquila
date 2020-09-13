@@ -58,7 +58,7 @@ Aquila/bin/Aquila_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freeba
 ##### --bam_file: "possorted_bam.bam" is bam file generated from barcode-awere aligner like "Lonranger align". How to get bam file, you can also check <a href="https://github.com/maiziex/Aquila/blob/master/src/How_to_get_bam_and_vcf.md">here</a>.
 
 ##### --vcf_file: "S12878_freebayes.vcf" is VCF file generated from variant caller like "FreeBayes". How to get vcf file, you can also check <a href="https://github.com/maiziex/Aquila/blob/master/src/How_to_get_bam_and_vcf.md">here</a>. 
-*** You can also use 1000 Genomes VCF as the VCF file input, and Aquila will directly use common variants to help partition linked-reads. In the later version, Aquila will use Graph Genome Reference to replace Conventional Linear Reference.  
+*** We now have a test version to use 1000 Genomes VCF as the input VCF file, and Aquila will directly use these common variants to help partition linked-reads. In the later version, Aquila will use Graph Genome Reference to replace Conventional Linear Reference.  
 
 #####  --sample_name: "S12878" are the sample name you can define. 
 
