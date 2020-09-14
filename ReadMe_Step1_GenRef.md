@@ -6,7 +6,7 @@ Aquila/bin/Aquila_step1_GenRef.py --bam_file possorted_bam.bam --vcf_file ALL.ch
 #### *Required parameters
 ##### --bam_file: "possorted_bam.bam" is bam file generated from barcode-awere aligner like "Lonranger align". How to get bam file, you can also check <a href="https://github.com/maiziex/Aquila/blob/master/src/How_to_get_bam_and_vcf.md">here</a>.
 
-##### --vcf_file: "ALL.chr21.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz" is VCF file of chr21 from <a href="ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/">1000 Genomes Phase3</a>. 
+##### --vcf_file: "ALL.chr21.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz" is VCF file of chr21 from <a href="https://github.com/maiziex/Aquila/blob/master/src/How_to_get_bam_and_vcf.md">1000 Genomes Phase3</a>. 
 
 #### *Optional parameters are the same as "Aquila_step1.py"
 
