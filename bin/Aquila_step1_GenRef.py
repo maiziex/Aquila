@@ -86,8 +86,8 @@ def main():
         Sorted_bam_dir = args.out_dir + "/sorted_bam/"
         Local_Assembly_dir = args.out_dir + "/Local_Assembly_by_chunks/"
         
-        #Get_fragment_files(bam_file,vcf_file,chr_start,chr_end,h5_dir,num_threads,mbq,boundary,sample_name)
-        #Get_highconf_profile(bam_file,chr_start,chr_end,HighConf_file_dir,uniq_map_dir)
+        Get_fragment_files(bam_file,vcf_file,chr_start,chr_end,h5_dir,num_threads,mbq,boundary,sample_name)
+        Get_highconf_profile(bam_file,chr_start,chr_end,HighConf_file_dir,uniq_map_dir)
         Haplotying_fragments(chr_start,chr_end,phased_file_dir,h5_dir,sample_name)
         Cut_phase_blocks(chr_start,chr_end,block_threshold,block_len_use,phase_blocks_cut_highconf_dir,phased_file_dir,HighConf_file_dir)
         
