@@ -258,5 +258,5 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_merged --num_threads 30 --
 
 ## Troubleshooting:
 ##### Please submit issues on the github page for <a href="https://github.com/maiziex/Aquila/issues">Aquila</a>. 
-##### Or contact with me through <a href="xzhou15@cs.stanford.edu">xzhou15@cs.stanford.edu</a>
+##### Or contact with me through <a href="maizie.zhou@vanderbilt.edu">maizie.zhou@vanderbilt.edu</a>
 
