@@ -252,6 +252,7 @@ Aquila/bin/Aquila_step2.py --out_dir Assembly_results_merged --num_threads 30 --
 ## Cite Aquila:
 #### Aquila enables reference-assisted diploid personal genome assembly and comprehensive variant detection based on linked-reads. X. Zhou, L. Zhang, Z. Weng, D. L. Dill, A. Sidow. Nature Communications (2021) 12:1077.
 
+## Other information:
 #### Aquila can also do hybrid assembly for both 10X and stLFR linked-reads data and WGS variant calling, please check <a href="https://github.com/maiziex/Aquila_stLFR">here</a>
 #### Tell-Seq works with Aquila out of the box!
 
