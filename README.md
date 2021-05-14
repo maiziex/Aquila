@@ -55,31 +55,33 @@ Aquila uses 23 for "chrX", and not able to handle "chrY" in current version.
 Aquila/bin/Aquila_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freebayes.vcf --sample_name S12878 --out_dir Assembly_results_S12878 --uniq_map_dir Aquila/Uniqness_map
 ```
 #### *Required parameters
-##### --bam_file: "possorted_bam.bam" is bam file generated from barcode-awere aligner like "Lonranger align". How to get bam file, you can also check <a href="https://github.com/maiziex/Aquila/blob/master/src/How_to_get_bam_and_vcf.md">here</a>.
+**--bam_file:** "possorted_bam.bam" is bam file generated from barcode-awere aligner like "Lonranger align". How to get bam file, you can also check <a href="https://github.com/maiziex/Aquila/blob/master/src/How_to_get_bam_and_vcf.md">here</a>.
 
-##### --vcf_file: "S12878_freebayes.vcf" is VCF file generated from variant caller like "FreeBayes". How to get vcf file, you can also check <a href="https://github.com/maiziex/Aquila/blob/master/src/How_to_get_bam_and_vcf.md">here</a>. 
+**--vcf_file:** "S12878_freebayes.vcf" is VCF file generated from variant caller like "FreeBayes". How to get vcf file, you can also check <a href="https://github.com/maiziex/Aquila/blob/master/src/How_to_get_bam_and_vcf.md">here</a>. 
 *** We now have a new version for step1 to use 1000 Genomes VCF as the input VCF file (please check <a href="https://github.com/maiziex/Aquila/blob/master/ReadMe_Step1_GenRef.md">here</a>), and Aquila will use common variants from 1000G to help partition linked-reads. In the later version, Aquila will use Graph Genome Reference to replace Conventional Linear Reference.  
 
-#####  --sample_name: "S12878" are the sample name you can define. 
+**--sample_name:** "S12878" are the sample name you can define. 
 
-#####  --uniq_map_dir: "Aquila/Uniqness_map" is the uniqness file for GRCh38 you can download by "./install.sh".
+**--uniq_map_dir:** "Aquila/Uniqness_map" is the uniqness file for GRCh38 you can download by "./install.sh".
 
 #### *Optional parameters
-##### --mbq_threshold, default = 13, It's phred-scaled quality score for the assertion made in ALT.
-##### --boundary: default = 50000 (50kb), It is the boundary for long fragments with the same barcode. 
-##### --out_dir, default = ./Asssembly_results. You can define your own folder, for example "Assembly_results_S12878". 
+**--mbq_threshold:** default = 13, It's phred-scaled quality score for the assertion made in ALT.
 
-##### --block_threshold, default = 200000 (200kb)
+**--boundary:** default = 50000 (50kb), It is the boundary for long fragments with the same barcode. 
+
+**--out_dir:** default = ./Asssembly_results. You can define your own folder, for example "Assembly_results_S12878". 
+
+**--block_threshold:** default = 200000 (200kb)
  
-##### --block_len_use, default = 100000 (100kb)
+**--block_len_use:** default = 100000 (100kb)
 
-##### --num_threads, default = 8. It's recommended not to change this setting unless large memory node could be used (2*memory capacity(it suggests for assembly below)), then try to use "--num_threads 12". 
+**--num_threads:** default = 8. It's recommended not to change this setting unless large memory node could be used (2*memory capacity(it suggests for assembly below)), then try to use "--num_threads 12". 
 
-##### --num_threads_for_samtools_sort, default = 20. This setting is evoked for "samtools sort".
+**--num_threads_for_samtools_sort:** default = 20. This setting is evoked for "samtools sort".
 
-##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will assemble chromsomes 1,2,3,4,5. Use "--chr_start 2 --chr_end 2" will only assemlby chromosome 2. (*Notes: Use 23 for "chrX")
+**--chr_start --chr_end:** if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will assemble chromsomes 1,2,3,4,5. Use "--chr_start 2 --chr_end 2" will only assemlby chromosome 2. (*Notes: Use 23 for "chrX")
 
-To use the above option "--chr_start, --chr_end", it is recommended(not required) to run the below command first to save more time for step1. (This step is recommended if your computing node is not reliable and may break down very often)
+To use the above option "--chr_start --chr_end", it is recommended(not required) to run the below command first to save more time for step1. (This step is recommended if your computing node is not reliable and may break down very often)
 ```
 python Aquila/bin/Aquila_step0_sortbam.py --bam_file possorted_bam.bam --out_dir Assembly_results_S12878 --num_threads_for_samtools_sort 30 
 ```
@@ -107,18 +109,18 @@ Coverage | Memory| Time for WGS on a single node  |
 Aquila/bin/Aquila_step2.py --out_dir Assembly_results_S12878 --num_threads 30 --reference Aquila/source/ref.fa
 ```
 #### *Required parameters
-#####  --reference: "Aquila/source/ref.fa" is the reference fasta file you can download by "./install".
+**--reference:** "Aquila/source/ref.fa" is the reference fasta file you can download by "./install".
 
 #### *Optional parameters
-#####  --out_dir, default = ./Asssembly_results, make sure it's the same as "--out_dir" from ***Step1*** if you want to define your own output directory name.
+**--out_dir:** default = ./Asssembly_results, make sure it's the same as "--out_dir" from ***Step1*** if you want to define your own output directory name.
 
-#####  --num_threads, default = 30, this determines the number of files assembled simultaneously by SPAdes.  
+**--num_threads:** default = 30, this determines the number of files assembled simultaneously by SPAdes.  
 
-#####  --num_threads_spades, default = 5, this is the "-t" for SPAdes. 
+**--num_threads_spades:** default = 5, this is the "-t" for SPAdes. 
 
-##### --block_len_use, default = 100000 (100kb)
+**--block_len_use:** default = 100000 (100kb)
 
-##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 2" 
+**--chr_start --chr_end:** if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 2" 
 
 <!-- -->
 #### Memory/Time Usage For Step 2
@@ -205,29 +207,29 @@ wget http://xinzhouneuroscience.org/wp-content/uploads/2019/06/Uniqness_map_hg19
 Aquila/bin/Aquila_step1_multilibs.py --bam_file_list ./S24385_Lysis_2/Longranger_align_bam/S24385_lysis_2/outs/possorted_bam.bam,./S24385_Lysis_2H/Longranger_align_bam/S24385_lysis_2H/outs/possorted_bam.bam --vcf_file_list ./S24385_lysis_2/Freebayes_results/S24385_lysis_2_grch38_ref_freebayes.vcf,./S24385_lysis_2H/Freebayes_results/S24385_lysis_2H_grch38_ref_freebayes.vcf --sample_name_list S24385_lysis_2,S24385_lysis_2H --out_dir Assembly_results_merged --uniq_map_dir Aquila/Uniqness_map
 ```
 #### *Required parameters
-##### --bam_file: "possorted_bam.bam" is bam file generated from barcode-awere aligner like "Lonranger align". Each bam file is seperately by comma (",").
+**--bam_file:** "possorted_bam.bam" is bam file generated from barcode-awere aligner like "Lonranger align". Each bam file is seperately by comma (",").
 
-##### --vcf_file: "S12878_freebayes.vcf" is VCF file generated from variant caller like "FreeBayes". Each VCF file is seperately by comma (",").
+**--vcf_file:** "S12878_freebayes.vcf" is VCF file generated from variant caller like "FreeBayes". Each VCF file is seperately by comma (",").
 
 
-#####  --sample_name: S24385_lysis_2,S24385_lysis_2H are the sample names you can define. Each sample name is seperately by comma (",").
+**--sample_name:** S24385_lysis_2,S24385_lysis_2H are the sample names you can define. Each sample name is seperately by comma (",").
 
-#####  --uniq_map_dir: "Aquila/Uniqness_map" is the uniqness file you can download by "./install.sh".
+**--uniq_map_dir:** "Aquila/Uniqness_map" is the uniqness file you can download by "./install.sh".
 
 #### *Optional parameters
-#####  --out_dir, default = ./Asssembly_results 
+**--out_dir:** default = ./Asssembly_results 
 
-##### --block_threshold, default = 200000 (200kb)
+**--block_threshold:** default = 200000 (200kb)
  
-##### --block_len_use, default = 100000 (100kb)
+**--block_len_use:** default = 100000 (100kb)
 
-##### --num_threads, default = 8. It's recommended not to change this setting unless large memory node could be used (2*memory capacity(it suggests for assembly below)), then try to use "--num_threads 12". 
+**--num_threads:** default = 8. It's recommended not to change this setting unless large memory node could be used (2*memory capacity(it suggests for assembly below)), then try to use "--num_threads 12". 
 
-##### --num_threads_for_samtools_sort, default = 20. This setting is evoked for "samtools sort".
+**--num_threads_for_samtools_sort:** default = 20. This setting is evoked for "samtools sort".
 
 
-##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will assemble chromsomes 1,2,3,4,5. Use "--chr_start 2 --chr_end 2" will only assemlby chromosome 2. (*Notes: Use 23 for "chrX")
-To use the above option "--chr_start, --chr_end", it is recommended (not required) to run the below command first to save more time for step1. 
+**--chr_start --chr_end:** if you only want to assembly some chromosomes or only one chromosome. For example: use "--chr_start 1 --chr_end 5"  will assemble chromsomes 1,2,3,4,5. Use "--chr_start 2 --chr_end 2" will only assemlby chromosome 2. (*Notes: Use 23 for "chrX")
+To use the above option "--chr_start --chr_end", it is recommended (not required) to run the below command first to save more time for step1. 
 ```
 python Aquila/bin/Aquila_step0_sortbam_multilibs.py --bam_file_list ./S24385_Lysis_2/Longranger_align_bam/S24385_lysis_2/outs/possorted_bam.bam,./S24385_Lysis_2H/Longranger_align_bam/S24385_lysis_2H/outs/possorted_bam.bam --out_dir Assembly_results_merged --num_threads_for_samtools_sort 10 --sample_name_list S24385_lysis_2,S24385_lysis_2H 
 ```
@@ -237,16 +239,16 @@ python Aquila/bin/Aquila_step0_sortbam_multilibs.py --bam_file_list ./S24385_Lys
 Aquila/bin/Aquila_step2.py --out_dir Assembly_results_merged --num_threads 30 --reference Aquila/source/ref.fa
 ```
 #### *Required parameters
-#####  --reference: "Aquila/source/ref.fa" is the reference fasta file you can download by "./install".
+**--reference:** "Aquila/source/ref.fa" is the reference fasta file you can download by "./install".
 
 #### *Optional parameters
-#####  --out_dir, default = ./Asssembly_results, make sure it's the same as "--out_dir" from step1 if you want to define your own output directory name.
+**--out_dir:** default = ./Asssembly_results, make sure it's the same as "--out_dir" from step1 if you want to define your own output directory name.
 
-#####  --num_threads, default = 20 
+**--num_threads:** default = 20 
 
-##### --block_len_use, default = 100000 (100kb)
+**--block_len_use:** default = 100000 (100kb)
 
-##### --chr_start, --chr_end: if you only want to assembly some chromosomes or only one chromosome. 
+**--chr_start --chr_end:** if you only want to assembly some chromosomes or only one chromosome. 
 
 
 ## Cite Aquila:
