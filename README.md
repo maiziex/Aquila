@@ -182,13 +182,13 @@ Aquila outputs an overall contig file “Aquila_Contig_chr*.fasta” for each ch
 * Aquila outputs all raw contigs, even those <1kb. For some other downstream analyses (e.g. to obtain QV from Merqury), it is necessary to filter out small contigs.  
 
 ### Clean Data
-##### If your hard drive storage is limited (Aquila will generate a lot of intermediate files by local assembly), it is suggested to quily clean some data by running "Aquila_clean.py" after you get all your contig files in "Assembly_Contigs_files". Or you can keep them for some analysis (check the above output directory tree for details). 
+##### If your hard drive storage is limited (Aquila will generate a lot of intermediate files by local assembly), it is suggested to quily clean some data by running `Aquila_clean.py` after you get all your contig files in `Assembly_Contigs_files`. Or you can keep them for some analysis (check the above output directory tree for details). 
 ```
 Aquila/bin/Aquila_clean.py --assembly_dir Assembly_results_S12878 
 ```
 
 ## Assembly Based Variants Calling and Phasing:
-##### For example, you can use "Assemlby_results_S12878" as input directory to generate a VCF file which includes SNPs, small Indels and SVs, and the phased profile of all of them. 
+##### For example, you can use `Assemlby_results_S12878` as input directory to generate a VCF file which includes SNPs, small Indels and SVs, and the phased profile of all of them. 
 ##### Please check <a href="https://github.com/maiziex/Aquila/blob/master/Assembly_based_variants_call/README.md/">Assembly_based_variants_call_and_phasing</a> for details. 
 
 ## Aquila assembly for other version of human referece: hg19
