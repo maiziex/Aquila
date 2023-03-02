@@ -1,6 +1,7 @@
 # :milky_way: Aquila :eagle: 
 [![BioConda Install](https://img.shields.io/conda/dn/bioconda/aquila.svg?style=flag&label=BioConda%20install)](https://anaconda.org/bioconda/aquila)
 # Install through Bioconda (The latest version 1.0.0):
+* 2023/03/01: we upload the Uniqness map and source file (ref.fa for hg38) to Zenodo for users to download.
 ```
 conda install aquila
 ```
