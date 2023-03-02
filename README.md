@@ -25,8 +25,8 @@ rm source.tar.gz
 
 #Download hg38 "Uniqness_map"
 wget https://zenodo.org/record/7689958/files/Uniqness_map_hg38.tar.gz
-tar -xvf Uniqness_map.tar.gz
-rm Uniqness_map.tar.gz
+tar -xvf Uniqness_map_hg38.tar.gz
+rm Uniqness_map_hg38.tar.gz
 ```
 ## Dependencies through Github install:
 Aquila utilizes <a href="https://www.python.org/downloads/">Python3 (+ numpy, pysam, sortedcontainers and scipy)</a>, <a href="http://samtools.sourceforge.net/">SAMtools</a>, and <a href="https://github.com/lh3/minimap2">minimap2</a>. To be able to execute the above programs by typing their name on the command line, the program executables must be in one of the directories listed in the PATH environment variable (".bashrc"). <br />
@@ -52,7 +52,8 @@ Aquila uses 23 for "chrX", and not able to handle "chrY" in current version.
 
 ### Step 1: 
 ```
-Aquila/bin/Aquila_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freebayes.vcf --sample_name S12878 --out_dir Assembly_results_S12878 --uniq_map_dir Aquila/Uniqness_map
+Aquila/bin/Aquila_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freebayes.vcf --sample_name S12878 --out_dir Assembly_results_S12878 --
+_map_dir Aquila/Uniqness_map_hg38
 ```
 #### *Required parameters
 **--bam_file:** "possorted_bam.bam" is a bam file generated from barcode-aware aligner like "Longranger align". How to get the bam file, you can also check <a href="https://github.com/maiziex/Aquila/blob/master/src/How_to_get_bam_and_vcf.md">here</a>.
@@ -62,7 +63,7 @@ Aquila/bin/Aquila_step1.py --bam_file possorted_bam.bam --vcf_file S12878_freeba
 
 **--sample_name:** "S12878" is the sample name you can define. 
 
-**--uniq_map_dir:** "Aquila/Uniqness_map" is the uniqness file for GRCh38 you can download by "./install.sh".
+**--uniq_map_dir:** "Aquila/Uniqness_map_hg38" is the uniqness file for GRCh38 you can download by "./install.sh".
 
 #### *Optional parameters
 **--mbq_threshold:** default = 13, It's phred-scaled quality score for the assertion made in ALT.
