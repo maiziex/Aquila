@@ -8,14 +8,14 @@ cd ..
 
 
 # download the reference file (GRCh38)
-wget http://xinzhouneuroscience.org/wp-content/uploads/2019/05/source.tar.gz
+wget https://zenodo.org/record/7689958/files/source.tar.gz
 tar -xvf source.tar.gz
 rm source.tar.gz
 
 
-wget http://xinzhouneuroscience.org/wp-content/uploads/2019/05/Uniqness_map.tar.gz
-tar -xvf Uniqness_map.tar.gz
-rm Uniqness_map.tar.gz
+wget https://zenodo.org/record/7689958/files/Uniqness_map_hg38.tar.gz
+tar -xvf Uniqness_map_hg38.tar.gz
+rm Uniqness_map_hg38.tar.gz
 
 
 if ! [ -x "$(command -v samtools)" ];
