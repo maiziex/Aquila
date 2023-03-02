@@ -206,7 +206,7 @@ wget https://zenodo.org/record/7689958/files/Uniqness_map_hg19.tar.gz
 
 ### Step 1: 
 ```
-Aquila/bin/Aquila_step1_multilibs.py --bam_file_list ./S24385_Lysis_2/Longranger_align_bam/S24385_lysis_2/outs/possorted_bam.bam,./S24385_Lysis_2H/Longranger_align_bam/S24385_lysis_2H/outs/possorted_bam.bam --vcf_file_list ./S24385_lysis_2/Freebayes_results/S24385_lysis_2_grch38_ref_freebayes.vcf,./S24385_lysis_2H/Freebayes_results/S24385_lysis_2H_grch38_ref_freebayes.vcf --sample_name_list S24385_lysis_2,S24385_lysis_2H --out_dir Assembly_results_merged --uniq_map_dir Aquila/Uniqness_map
+Aquila/bin/Aquila_step1_multilibs.py --bam_file_list ./S24385_Lysis_2/Longranger_align_bam/S24385_lysis_2/outs/possorted_bam.bam,./S24385_Lysis_2H/Longranger_align_bam/S24385_lysis_2H/outs/possorted_bam.bam --vcf_file_list ./S24385_lysis_2/Freebayes_results/S24385_lysis_2_grch38_ref_freebayes.vcf,./S24385_lysis_2H/Freebayes_results/S24385_lysis_2H_grch38_ref_freebayes.vcf --sample_name_list S24385_lysis_2,S24385_lysis_2H --out_dir Assembly_results_merged --uniq_map_dir Aquila/Uniqness_map_hg38
 ```
 #### *Required parameters
 **--bam_file:** "possorted_bam.bam" is bam file generated from barcode-awere aligner like "Lonranger align". Each bam file is seperately by comma (",").
@@ -216,7 +216,7 @@ Aquila/bin/Aquila_step1_multilibs.py --bam_file_list ./S24385_Lysis_2/Longranger
 
 **--sample_name:** S24385_lysis_2,S24385_lysis_2H are the sample names you can define. Each sample name is seperately by comma (",").
 
-**--uniq_map_dir:** "Aquila/Uniqness_map" is the uniqness file you can download by "./install.sh".
+**--uniq_map_dir:** "Aquila/Uniqness_map_hg38" is the uniqness file you can download by "./install.sh".
 
 #### *Optional parameters
 **--out_dir:** default = ./Asssembly_results 
