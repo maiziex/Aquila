@@ -50,7 +50,7 @@ def del_one_dir_2(out_dir,xin):
 
 
 def run_spades_all(chr_start,chr_end,output_dir,num_of_threads,minicontig_dir):
-    num_of_threads = multiprocessing.cpu_count() - 10
+    #num_of_threads = multiprocessing.cpu_count() - 10
     for chr_num in range(chr_start, chr_end+1):
         in_dir = output_dir + "chr" + str(chr_num) + "_files_cutPBHC/" 
         count = 1
